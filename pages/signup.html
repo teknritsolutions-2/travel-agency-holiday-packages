@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover thoughtfully curated domestic and international holidays. Save your favourites and shape your next journey in a personal traveler workspace."
+    />
+    <meta name="theme-color" content="#203B57" />
+    <title>Begin your next chapter · Travel & Holiday Packages</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("atlas-theme") || "light";
+        document.documentElement.dir =
+          localStorage.getItem("atlas-direction") || "ltr";
+      } catch (e) {}
+    </script>
+    <script defer src="../assets/js/travel-data.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+  </head>
+  <body data-page="signup">
+    <a class="skip" href="#main">Skip to content</a>
+    <div id="app"></div>
+    <noscript
+      ><main>
+        <h1>Begin your next chapter</h1>
+        <p>
+          Please enable JavaScript to explore packages and use your traveler
+          workspace.
+        </p>
+      </main></noscript
+    >
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+[dir="rtl"] .hero:before {
+  background:
+    linear-gradient(270deg, #0e2032bb 0%, #13293955 50%, #0c20200d 100%),
+    linear-gradient(0deg, #0b252b55, transparent 45%);
+}
+[dir="rtl"] .inner-hero:after {
+  background: linear-gradient(270deg, #0f2333cf, #152c3c35);
+}
+[dir="rtl"] .arrow-icon {
+  transform: rotate(180deg);
+}
+[dir="rtl"] #toast {
+  transform: translate(50%, 20px);
+}
+[dir="rtl"] #toast.show {
+  transform: translate(50%, 0);
+}
+[dir="rtl"] .journal-inset {
+  transform: rotate(9deg);
+}
+[dir="rtl"] .price,
+[dir="rtl"] .package-info {
+  text-align: start;
+}
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: end;
+}
+[dir="rtl"] .itinerary .accordion:before {
+  inset-inline-start: -36px;
+}
+[dir="rtl"] .menu-btn svg,
+[dir="rtl"] .brand img,
+[dir="rtl"] img {
+  transform: none;
+}
+/* Keep English and numeric runs readable inside the mirrored interface. */
+[dir="rtl"] :is(h1, h2, h3, h4, p) {
+  unicode-bidi: plaintext;
+  text-align: right;
+}
+[dir="rtl"] .brand-caption {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: right;
+}
+[dir="rtl"]
+  :is(
+    .counter,
+    .price strong,
+    .price em,
+    .hero-note > div:not(.compass),
+    .progress-row span,
+    .footer-bottom > span
+  ) {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+[dir="rtl"] :is(.price strong, .price em) {
+  display: inline-block;
+}
+[dir="rtl"] .gallery-controls .icon-btn svg,
+[dir="rtl"] .back-home svg {
+  transform: rotate(180deg);
+}
+[dir="rtl"] .journal-closing :is(h2, p) {
+  text-align: center;
+}
