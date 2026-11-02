@@ -1,12 +1,13 @@
 html[data-theme="dark"] {
   color-scheme: dark;
   --paper: #151b24;
-  --surface: #202936;
-  --mist: #252e39;
+  --surface: #20262e;
+  --mist: #292f38;
   --text: #e7ebef;
   --muted: #b6bfc8;
   --line: #3b4653;
   --heading: #f1f3f4;
+  --accent-text: #dceaf3;
   --shadow: 0 18px 45px #00000036;
 }
 html[data-theme="dark"] .brand-light {
@@ -16,20 +17,21 @@ html[data-theme="dark"] .brand-dark {
   display: block;
 }
 html[data-theme="dark"] .trust-strip svg {
-  color: var(--secondary);
+  color: var(--accent-text);
 }
 html[data-theme="dark"] .pill.active,
 html[data-theme="dark"] .pill[aria-selected="true"] {
   background: var(--secondary);
-  color: #203b57;
+  color: var(--on-secondary);
   border-color: var(--secondary);
 }
 html[data-theme="dark"] .favorite {
   color: #203b57;
-  background: #faf9f6;
+  background: #fafafa;
 }
 html[data-theme="dark"] .favorite[aria-pressed="true"] {
   background: var(--secondary);
+  color: var(--on-secondary);
 }
 html[data-theme="dark"] .journal-stamp {
   border-color: var(--line);
@@ -52,14 +54,14 @@ html[data-theme="dark"] .dashboard-nav a.active {
   background: #344f69;
 }
 html[data-theme="dark"] .auth-bottom a {
-  color: var(--secondary);
+  color: var(--accent-text);
 }
 html[data-theme="dark"]
   :is(.package-card, .panel, .stat-card, .filter-panel, .auth-form, .mini-app) {
   box-shadow: 0 8px 26px #00000018;
 }
 html[data-theme="dark"] .planning-photo-note {
-  background: #28323f;
+  background: #292f38;
   border-color: #43505f;
 }
 html[data-theme="dark"] .atlas-pick img {
@@ -70,15 +72,11 @@ html[data-theme="dark"] .atlas-pick:hover img {
   opacity: 1;
 }
 html[data-theme="dark"] .postcard {
-  background: #252f3c;
+  background: #292f38;
   border-color: #43505f;
 }
-html[data-theme="dark"] :is(.philosophy-title > img, .auth-sketch img) {
-  filter: brightness(0) invert(1);
-  opacity: 0.8;
-}
 html[data-theme="dark"] .provider-btn {
-  background: #252e39;
+  background: #292f38;
 }
 html[data-theme="dark"] .auth-signup .auth-form {
   border-color: #43505f;

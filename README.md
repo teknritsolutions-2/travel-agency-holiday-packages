@@ -1,6 +1,6 @@
-# Horyvane — Travel Agency & Holiday Packages
+# PATHBORNE — Travel Agency & Holiday Packages
 
-A complete, buildless, multi-page HTML5 / CSS3 / vanilla JavaScript travel frontend using the **Living Atlas** creative concept. The working design brand is **Horyvane**, with an original paraglider and mountain mark. The name has not been checked for trademark or worldwide availability.
+A complete, buildless, multi-page HTML5 / CSS3 / vanilla JavaScript travel frontend using the **Living Atlas** creative concept. The working design brand is **PATHBORNE**, with an original geometric mountain horizon and journey route mark. The name has not been checked for trademark or worldwide availability.
 
 ## Run locally
 
@@ -17,15 +17,15 @@ Open `http://localhost:4173`. No dependency installation or build is needed. Kee
 - Two different complete homepages; domestic and international catalogs; honeymoon/family collections; package details; destination finder; curated getaways; booking enquiry; about; contact; FAQ; journal/articles; privacy; terms; 404; coming soon.
 - Twenty illustrative packages across ten destinations, powered by `assets/js/travel-data.js`.
 - Destination selection and swipe navigation, budget/style/duration/destination filters, sorting, persistent favorites, package-specific day routes and enquiry prefill.
-- Sticky navigation, keyboard/click/hover dropdown, focus-managed responsive drawer, dark theme, RTL, reduced-motion support and matching atlas favicon.
+- Sticky navigation, keyboard/click/hover dropdown, focus-managed responsive drawer, dark theme, RTL, reduced-motion support and matching mountain-route favicon.
 - Separate traveler-journal login/signup compositions, password visibility and validation, equal theme/direction controls, Google/Apple integration points with accurate disconnected states, and a working guest workspace.
 - Dashboard overview, trips, local status tracker, itinerary notes/expansion/print/download, favorites, session document/invoice viewing and downloading, actual local activity, editable profile, export/reset/settings and guest exit.
 
 ## Living Atlas 2.0 design refinement
 
-Ocean Ink and Expedition Gold, shared readable type tokens, a painted Atlas Explorer, an interactive three-stage planning feature, Beyond the Map editorial About, independent auth compositions, and a floating Back-to-Top control that docks at the footer. Package records and existing browser storage keys are preserved.
+Ocean Ink, Coastal Blue and pale blue, shared readable type tokens, a painted Atlas Explorer, an interactive three-stage planning feature, Beyond the Map editorial About, independent auth compositions, and a floating Back-to-Top control that docks at the footer. Package records and existing browser storage keys are preserved.
 
-See `documentation/refinement-qa.md` for this revision’s test coverage and browser limitations.
+See `documentation/branding-qa.md` for the final identity correction and current verification, and `documentation/refinement-qa.md` for the earlier layout refinement.
 
 ## Frontend boundaries
 

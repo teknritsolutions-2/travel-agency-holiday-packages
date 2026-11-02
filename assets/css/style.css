@@ -107,12 +107,12 @@ p {
   max-width: 650px;
 }
 .btn:hover {
-  background: #304e6a;
+  background: var(--ink-deep);
   transform: translateY(-2px);
 }
 .btn.secondary {
   background: var(--secondary);
-  color: #203b57;
+  color: var(--on-secondary);
 }
 .btn.outline {
   background: transparent;
@@ -153,7 +153,7 @@ p {
   z-index: 1000;
   padding: 12px;
   background: var(--secondary);
-  color: var(--ink);
+  color: var(--on-secondary);
 }
 .skip:focus {
   top: 10px;
@@ -316,7 +316,7 @@ p {
 }
 .hero h1 em {
   font-style: normal;
-  color: var(--secondary);
+  color: var(--secondary-light);
 }
 .hero p {
   color: #fff;
@@ -493,7 +493,7 @@ p {
   background: var(--secondary);
 }
 .favorite[aria-pressed="true"] svg {
-  fill: var(--ink);
+  fill: var(--on-secondary);
 }
 .package-info {
   padding: 23px;
@@ -738,7 +738,7 @@ p {
   gap: 25px;
 }
 .footer-links a:hover {
-  color: var(--secondary);
+  color: var(--secondary-light);
 }
 .footer-bottom .icon-btn {
   width: 34px;
@@ -1403,7 +1403,7 @@ dialog::backdrop {
   font-family: "Bricolage Grotesque";
   font-size: 130px;
   line-height: 1;
-  color: var(--secondary);
+  color: var(--accent-text);
   letter-spacing: -7px;
 }
 .error-page h1 {
@@ -1543,7 +1543,7 @@ dialog::backdrop {
   place-content: center;
   border-radius: 50%;
   background: var(--secondary);
-  color: var(--ink);
+  color: var(--on-secondary);
   font-size: var(--type-meta);
 }
 .dashboard-content {
@@ -1647,7 +1647,7 @@ dialog::backdrop {
 }
 .dash-welcome .eyebrow {
   font-size: var(--type-meta);
-  color: var(--secondary);
+  color: var(--secondary-light);
   margin-bottom: 10px;
 }
 .progress-row {
@@ -1727,7 +1727,7 @@ dialog::backdrop {
   display: inline-block;
 }
 .status.prepared {
-  background: #e9c65a33;
+  background: #477fa633;
 }
 .request-filters {
   display: flex;
@@ -3391,7 +3391,7 @@ td .btn {
 .detail-layout .sticky-card {
   max-width: 100%;
 }
-.dashboard-mobile-brand,
+.dashboard-topbar > .dashboard-mobile-brand,
 .sidebar-utilities {
   display: none;
 }
@@ -3447,7 +3447,7 @@ td .btn {
   .dashboard-topbar > .actions {
     margin-inline-start: auto;
   }
-  .dashboard-mobile-brand {
+  .dashboard-topbar > .dashboard-mobile-brand {
     display: inline-flex;
   }
   .dashboard-mobile-brand img {
@@ -3646,7 +3646,7 @@ td .btn {
 .journal-day[aria-selected="true"]:before {
   background: var(--secondary);
   border-color: var(--secondary);
-  box-shadow: 0 0 0 5px #e9c65a26;
+  box-shadow: 0 0 0 5px #477fa626;
 }
 .journal-day-panel {
   position: relative;
@@ -3770,20 +3770,24 @@ td .btn {
     font-size: 31px;
   }
 }
-/* Horyvane · Painted Horizons — shared design tokens and component system */
+/* PATHBORNE · Painted Horizons — shared design tokens and component system */
 :root {
   --radius: 9px;
   --heading: #203b57;
   --dark: #151b24;
-  --line: #e1e4e2;
+  --line: #dfe3e7;
   --muted: #66717c;
   --text: #222831;
-  --mist: #f0f2f1;
+  --mist: #f1f3f5;
   --surface: #fff;
-  --paper: #faf9f6;
+  --paper: #fafafa;
   --ink: #203b57;
-  --secondary: #e9c65a;
-  --secondary-hover: #f2d678;
+  --secondary: #477fa6;
+  --secondary-hover: #dceaf3;
+  --secondary-light: #dceaf3;
+  --ink-deep: #162c42;
+  --on-secondary: #05080c;
+  --accent-text: #203b57;
   --type-body: 18px;
   --type-support: 16px;
   --type-meta: 14px;
@@ -3839,6 +3843,7 @@ body {
 }
 .btn.secondary:hover {
   background: var(--secondary-hover);
+  color: var(--ink);
 }
 .text-link {
   padding-bottom: 5px;
@@ -3961,9 +3966,9 @@ body {
 .brand .brand-caption {
   display: block;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: 0.8px;
   line-height: 1;
   text-transform: none;
   max-width: none;
@@ -4062,7 +4067,7 @@ body {
 }
 .back-top:hover {
   background: var(--secondary);
-  color: var(--ink);
+  color: var(--on-secondary);
 }
 .atlas-section {
   padding-top: 76px;
@@ -4104,18 +4109,6 @@ body {
 .atlas-image-label strong {
   font: 500 54px/1.1 "Bricolage Grotesque";
   letter-spacing: -1.5px;
-}
-.atlas-flight {
-  position: absolute;
-  inset-inline-end: -28px;
-  bottom: 16px;
-  padding: 8px;
-  width: 135px;
-  height: 104px;
-  background: var(--ink);
-  border: 7px solid var(--paper);
-  border-radius: 50%;
-  transform: rotate(-7deg);
 }
 .atlas-notebook {
   min-width: 0;
@@ -4181,7 +4174,7 @@ body {
   height: 23px;
   border-radius: 50%;
   background: var(--secondary);
-  color: var(--ink);
+  color: var(--on-secondary);
   display: none;
   place-content: center;
 }
@@ -4272,7 +4265,7 @@ body {
 .planning-stage[aria-selected="true"] .stage-number {
   background: var(--secondary);
   border-color: var(--secondary);
-  color: var(--ink);
+  color: var(--on-secondary);
 }
 .planning-stage[aria-selected="true"] .stage-description {
   display: block;
@@ -4329,19 +4322,11 @@ body {
   display: grid;
   position: relative;
 }
-.editorial-motif {
-  position: absolute;
-  inset-inline-end: 4px;
-  top: -37px;
-  opacity: 0.8;
-  pointer-events: none;
-}
 .editorial-grid > div:last-child {
   position: relative;
 }
 .editorial .eyebrow {
-  color: var(--secondary);
-  padding-inline-end: 55px;
+  color: var(--secondary-light);
 }
 .editorial p {
   margin-block: 23px;
@@ -4571,7 +4556,7 @@ body {
   max-width: 430px;
 }
 .panorama-story .eyebrow {
-  color: var(--secondary);
+  color: var(--secondary-light);
 }
 .panorama-location {
   display: flex;
@@ -4633,18 +4618,18 @@ body {
 }
 .philosophy-layout {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 100px;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
-.philosophy-title > img {
-  margin-top: 35px;
-  width: 195px;
-  height: 210px;
-  opacity: 0.8;
+.philosophy-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
 }
 .philosophy-notes article {
   display: flex;
-  gap: 25px;
+  gap: 16px;
+  flex-direction: column;
   padding-block: 27px;
   border-top: 1px solid var(--line);
 }
@@ -4736,7 +4721,7 @@ body {
   line-height: 1.12;
 }
 .auth-story .eyebrow {
-  color: var(--secondary);
+  color: var(--secondary-light);
 }
 .auth-story p {
   font-size: var(--type-support);
@@ -4874,10 +4859,10 @@ body {
 .auth-signup .auth-photo {
   align-items: start;
   padding-top: 95px;
-  min-height: 1080px;
+  min-height: 980px;
 }
 .auth-signup .auth-photo-mask {
-  inset: 60px 10px 170px 25px;
+  inset: 60px 10px 60px 25px;
   mask: url("../images/brush.svg") center/100% 100% no-repeat;
   -webkit-mask: url("../images/brush.svg") center/100% 100% no-repeat;
 }
@@ -4895,24 +4880,6 @@ body {
 }
 .auth-signup .auth-story p {
   max-width: 350px;
-}
-.auth-sketch {
-  position: absolute;
-  bottom: 40px;
-  inset-inline-start: 70px;
-  display: flex;
-  align-items: center;
-  gap: 23px;
-}
-.auth-sketch span {
-  color: var(--heading);
-  font-size: var(--type-meta);
-  letter-spacing: 1.7px;
-  line-height: 1.8;
-}
-.auth-sketch img {
-  width: 125px;
-  height: 140px;
 }
 .auth-signup .auth-form-wrap {
   padding-block: 70px 40px;
@@ -5022,7 +4989,7 @@ body {
     padding-inline: 32px;
   }
   .philosophy-layout {
-    gap: 65px;
+    gap: 30px;
   }
 }
 @media (max-width: 1000px) {
@@ -5090,7 +5057,7 @@ body {
     font-size: var(--type-ui);
   }
   .philosophy-layout {
-    gap: 45px;
+    gap: 30px;
   }
   .auth-shell {
     grid-template-columns: 0.75fr 1fr;
@@ -5129,17 +5096,6 @@ body {
   .auth-signup .auth-form {
     padding: 28px;
   }
-  .auth-sketch {
-    inset-inline-start: 35px;
-    gap: 12px;
-  }
-  .auth-sketch img {
-    width: 95px;
-  }
-  .auth-sketch span {
-    font-size: var(--type-meta);
-    letter-spacing: 0.7px;
-  }
   .workspace-preview {
     gap: 30px;
   }
@@ -5153,6 +5109,10 @@ body {
   }
 }
 @media (max-width: 760px) {
+  .philosophy-notes {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
   .workspace-preview {
     grid-template-columns: minmax(0, 1fr);
     gap: 30px;
@@ -5270,7 +5230,7 @@ body {
     font-size: 29px;
   }
   .philosophy-layout {
-    gap: 35px;
+    gap: 30px;
   }
   .philosophy-title h2 {
     font-size: 34px;
@@ -5302,12 +5262,6 @@ body {
   .auth-story p {
     font-size: var(--type-support);
   }
-  .auth-sketch {
-    inset-inline-start: 25px;
-    flex-direction: column;
-    align-items: start;
-    gap: 0;
-  }
   .auth-signup .auth-story h2 {
     font-size: 30px;
   }
@@ -5325,7 +5279,7 @@ body {
     height: 41px;
   }
   .brand .brand-caption {
-    font-size: 26px;
+    font-size: 23px;
   }
   .section {
     padding-block: 54px;
@@ -5385,13 +5339,6 @@ body {
     top: 25px;
     inset-inline-start: 22px;
     letter-spacing: 1px;
-  }
-  .atlas-flight {
-    width: 95px;
-    height: 80px;
-    inset-inline-end: 0;
-    bottom: 5px;
-    border-width: 5px;
   }
   .atlas-caption {
     display: block;
@@ -5474,15 +5421,6 @@ body {
     font-size: 38px;
   }
   .editorial .eyebrow {
-    padding-inline-end: 50px;
-  }
-  .editorial-motif {
-    top: -18px;
-    inset-inline-end: 0;
-  }
-  .editorial-motif img {
-    width: 90px;
-    height: 60px;
   }
   .editorial .mini-meta {
     font-size: var(--type-meta);
@@ -5650,7 +5588,7 @@ body {
   }
   .philosophy-layout {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 30px;
   }
   .philosophy-title {
     position: relative;
@@ -5658,15 +5596,6 @@ body {
   .philosophy-title h2 {
     font-size: 33px;
     max-width: 265px;
-  }
-  .philosophy-title > img {
-    position: absolute;
-    inset-inline-end: 0;
-    bottom: 0;
-    width: 90px;
-    height: 105px;
-    margin: 0;
-    opacity: 0.45;
   }
   .philosophy-notes article {
     padding-block: 23px;
@@ -5737,8 +5666,7 @@ body {
     display: none;
   }
   .auth-story p,
-  .auth-location,
-  .auth-sketch {
+  .auth-location {
     display: none;
   }
   .auth-form-wrap,
@@ -5873,7 +5801,7 @@ body {
     min-height: 610px;
   }
   .brand .brand-caption {
-    font-size: 24px;
+    font-size: 23px;
   }
   .atlas-pick img {
     height: 65px;
@@ -5914,10 +5842,6 @@ body {
   }
   .photo-journal-label {
     max-width: 210px;
-  }
-  .philosophy-title > img {
-    width: 75px;
-    opacity: 0.25;
   }
 }
 @supports not (mask-image: url("")) {
@@ -5960,9 +5884,6 @@ body {
 .atlas-landscape .atlas-image-label {
   z-index: 1;
 }
-.atlas-landscape .atlas-flight {
-  z-index: 2;
-}
 .section.muted-bg:has(+ .unfolding-section) {
   padding-bottom: 35px;
 }
@@ -5973,17 +5894,6 @@ body {
 .unfolding-section + .section.muted-bg {
   padding-top: 30px;
 }
-.inner-hero > .international-route-art {
-  position: absolute;
-  inset: auto;
-  z-index: 0;
-  inset-inline-end: max(40px, calc((100vw - 1280px) / 2));
-  bottom: 35px;
-  width: 230px;
-  height: 145px;
-  opacity: 0.85;
-  pointer-events: none;
-}
 .dashboard-mobile-brand .brand-caption {
   font-size: 24px;
 }
@@ -5993,21 +5903,7 @@ body {
   display: flex;
   font-size: var(--type-meta);
 }
-@media (max-width: 900px) {
-  .inner-hero > .international-route-art {
-    width: 150px;
-    height: 100px;
-    bottom: 24px;
-    opacity: 0.5;
-  }
-  .inner-hero:has(.international-route-art) p {
-    max-width: 540px;
-  }
-}
 @media (max-width: 680px) {
-  .inner-hero > .international-route-art {
-    display: none;
-  }
   .hero-note {
     bottom: 58px;
   }
