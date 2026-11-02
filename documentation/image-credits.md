@@ -37,7 +37,7 @@ All destination images are downloaded locally. They are real photographs, not ge
 
 ## Original identity and graphics
 
-`logo.svg`, `logo-dark.svg`, `symbol.svg`, `dashboard-mark.svg`, `favicon.svg`, `brush.svg`, `horizon-panorama.svg` and `horizon-tall.svg` were created specifically for this project. They do not reproduce the identity or artwork of another travel agency. The PATHBORNE mark combines two geometric mountain ridges with a single curved journey route. Light, dark, standalone, dashboard and favicon variants share the same geometry. All interface icons are inline SVG line drawings.
+`logo.svg`, `logo-dark.svg`, `symbol.svg`, `dashboard-mark.svg`, `favicon.svg`, `brush.svg`, `horizon-panorama.svg` and `horizon-tall.svg` were created specifically for this project. They do not reproduce the identity or artwork of another travel agency. The Waylark mark uses a continuous geometric ribbon W. Light, dark, standalone, dashboard and favicon variants share the same geometry. All interface icons are inline SVG line drawings.
 
 ## Typography
 

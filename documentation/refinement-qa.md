@@ -1,8 +1,8 @@
-> Historical layout-refinement verification. The subsequent [PATHBORNE identity correction](branding-qa.md) supersedes this report’s palette and decorative-artwork details.
+> Historical layout-refinement verification. The subsequent [Waylark identity correction](branding-qa.md) supersedes this report’s palette and decorative-artwork details.
 
-# PATHBORNE — Living Atlas 2.0 refinement QA
+# Waylark — Living Atlas 2.0 refinement QA
 
-Verified 2 November 2026 against the existing HTML/CSS/vanilla JavaScript source. PATHBORNE is a working design name; trademark availability has not been assessed.
+Verified 2 November 2026 against the existing HTML/CSS/vanilla JavaScript source. Waylark is a working design name; trademark availability has not been assessed.
 
 ## Implementation
 

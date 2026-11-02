@@ -245,7 +245,7 @@ function refreshDashboard() {
   $("#main").innerHTML = views[dashSection]();
   document.title =
     DASH_SECTIONS.find(([id]) => id === dashSection)[1] +
-    " · PATHBORNE Traveler Workspace";
+    " · Waylark Traveler Workspace";
   bindDashboardView();
 }
 window.refreshDashboard = refreshDashboard;

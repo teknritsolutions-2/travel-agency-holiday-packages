@@ -1,11 +1,13 @@
-# PATHBORNE — final identity and palette correction
+> Earlier blue-palette cleanup. The subsequent [Waylark theme and identity revision](theme-brand-qa.md) supersedes the mark and button-color details below.
 
-Verified 2 November 2026. This revision supersedes the previous brand, palette and decorative illustration direction while retaining the Living Atlas page layouts and Painted Horizons photography system. PATHBORNE remains a provisional design name pending commercial/trademark clearance.
+# Waylark — final identity and palette correction
+
+Verified 2 November 2026. This revision supersedes the previous brand, palette and decorative illustration direction while retaining the Living Atlas page layouts and Painted Horizons photography system. Waylark remains a provisional design name pending commercial/trademark clearance.
 
 ## Changes
 
-- New original geometric mountain horizon and curved journey route mark. Light/dark SVG, standalone symbol, favicon and dashboard asset use the same geometry; theme differences serve contrast. Small-size variants were rendered at 32px and 64px.
-- PATHBORNE replaces the previous visible identity in shared navigation, footer, auth pages, dashboard, accessible labels, titles, descriptions and Open Graph metadata. Repository name, URLs and storage keys remain unchanged.
+- The earlier geometric identity was subsequently replaced with the ribbon W mark. Light/dark SVG, standalone symbol, favicon and dashboard asset use the same geometry; theme differences serve contrast. Small-size variants were rendered at 32px and 64px.
+- Waylark replaces the previous visible identity in shared navigation, footer, auth pages, dashboard, accessible labels, titles, descriptions and Open Graph metadata. Repository name, URLs and storage keys remain unchanged.
 - Brand colors: Ocean Ink `#203B57`, Coastal Blue `#477FA6`, pale blue `#DCEAF3`, deep ink `#162C42`. Light surfaces use white, `#FAFAFA` and `#F1F3F5`; dark surfaces use `#151B24`, `#20262E` and `#292F38`.
 - Removed the paraglider, hiker and decorative globe-route artwork, their wrappers, assets and obsolete responsive/theme styles. Functional icons, location details, photographic postcards and the authentic hiking photo remain.
 - Rebalanced About’s planning philosophy into three concise notes; reclaimed Sign Up’s former sketch area for its existing photograph. The approved Ladakh section, gallery, planning selector, real photography and all three brush-mask assets are retained.

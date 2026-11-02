@@ -8,6 +8,8 @@ html[data-theme="dark"] {
   --line: #3b4653;
   --heading: #f1f3f4;
   --accent-text: #dceaf3;
+  --action: #44799e;
+  --action-hover: #386787;
   --shadow: 0 18px 45px #00000036;
 }
 html[data-theme="dark"] .brand-light {
@@ -51,7 +53,8 @@ html[data-theme="dark"] .editorial:after {
   background: #10161e;
 }
 html[data-theme="dark"] .dashboard-nav a.active {
-  background: #344f69;
+  background: var(--action);
+  color: #fff;
 }
 html[data-theme="dark"] .auth-bottom a {
   color: var(--accent-text);

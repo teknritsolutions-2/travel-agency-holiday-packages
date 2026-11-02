@@ -107,7 +107,7 @@ p {
   max-width: 650px;
 }
 .btn:hover {
-  background: var(--ink-deep);
+  background: var(--action-hover);
   transform: translateY(-2px);
 }
 .btn.secondary {
@@ -491,6 +491,7 @@ p {
 }
 .favorite[aria-pressed="true"] {
   background: var(--secondary);
+  color: var(--on-secondary);
 }
 .favorite[aria-pressed="true"] svg {
   fill: var(--on-secondary);
@@ -1081,7 +1082,7 @@ p {
 }
 .check-line input {
   margin-top: 5px;
-  accent-color: var(--ink);
+  accent-color: var(--action);
 }
 .summary-row {
   display: flex;
@@ -1727,7 +1728,7 @@ dialog::backdrop {
   display: inline-block;
 }
 .status.prepared {
-  background: #477fa633;
+  background: var(--mist);
 }
 .request-filters {
   display: flex;
@@ -3646,7 +3647,7 @@ td .btn {
 .journal-day[aria-selected="true"]:before {
   background: var(--secondary);
   border-color: var(--secondary);
-  box-shadow: 0 0 0 5px #477fa626;
+  box-shadow: 0 0 0 5px var(--mist);
 }
 .journal-day-panel {
   position: relative;
@@ -3770,7 +3771,7 @@ td .btn {
     font-size: 31px;
   }
 }
-/* PATHBORNE · Painted Horizons — shared design tokens and component system */
+/* Waylark · Painted Horizons — shared design tokens and component system */
 :root {
   --radius: 9px;
   --heading: #203b57;
@@ -3782,11 +3783,14 @@ td .btn {
   --surface: #fff;
   --paper: #fafafa;
   --ink: #203b57;
-  --secondary: #477fa6;
-  --secondary-hover: #dceaf3;
+  --coastal: #477fa6;
+  --action: #203b57;
+  --action-hover: #162c42;
+  --secondary: var(--action);
+  --secondary-hover: var(--action-hover);
   --secondary-light: #dceaf3;
   --ink-deep: #162c42;
-  --on-secondary: #05080c;
+  --on-secondary: #fff;
   --accent-text: #203b57;
   --type-body: 18px;
   --type-support: 16px;
@@ -3825,7 +3829,7 @@ body {
   line-height: 1.4;
   font-weight: 500;
   color: #fff;
-  background: var(--ink);
+  background: var(--action);
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 12px 24px;
@@ -3843,7 +3847,7 @@ body {
 }
 .btn.secondary:hover {
   background: var(--secondary-hover);
-  color: var(--ink);
+  color: #fff;
 }
 .text-link {
   padding-bottom: 5px;
@@ -3966,9 +3970,9 @@ body {
 .brand .brand-caption {
   display: block;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 23px;
+  font-size: 28px;
   font-weight: 600;
-  letter-spacing: 0.8px;
+  letter-spacing: -0.7px;
   line-height: 1;
   text-transform: none;
   max-width: none;
@@ -4825,7 +4829,7 @@ body {
   gap: 8px;
 }
 .auth-options input {
-  accent-color: var(--ink);
+  accent-color: var(--action);
 }
 .auth-options button {
   border: 0;
