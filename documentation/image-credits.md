@@ -37,7 +37,7 @@ All destination images are downloaded locally. They are real photographs, not ge
 
 ## Original identity and graphics
 
-`logo.svg`, `logo-dark.svg`, `favicon.svg` and `brush.svg` were created specifically for this project. They do not reproduce the identity or artwork of another travel agency. The mark represents a folded atlas and a route. All interface icons are inline SVG line drawings.
+`logo.svg`, `logo-dark.svg`, `symbol.svg`, `dashboard-mark.svg`, `favicon.svg`, `brush.svg`, `horizon-panorama.svg` and `horizon-tall.svg` were created specifically for this project. They do not reproduce the identity or artwork of another travel agency. The Horyvane mark represents a paraglider above a simplified mountain horizon. Light, dark, standalone, dashboard and favicon variants share the same geometry. All interface icons are inline SVG line drawings.
 
 ## Typography
 
@@ -46,3 +46,9 @@ Bricolage Grotesque and Outfit are served from local TTF files. Both use the SIL
 ## Image use
 
 The Home 1 and Home 2 heroes are distinct photographs of the Italian Dolomites. Domestic, international and honeymoon/family banners use different images. Destination labels refer to the photograph’s country or region, rather than claiming that a proposed package guarantees the pictured viewpoint or property. Resort photographs are destination inspiration; no named hotel or villa is promised.
+
+## Living Atlas 2.0 additions
+
+- `hiking-journal.webp`: [Will Africano on Unsplash](https://unsplash.com/photos/person-wearing-backpack-Rj2Xuc6-cd0), original source `photo-1568401900627-cbe151ba3455`. Licensed under the Unsplash License above; downloaded locally at 1800px and encoded as WebP. Used as a general hiking photograph, with no unverified destination or activity booking claim.
+- `paraglider-illustration.svg`, `hiker-illustration.svg` and `geographic-route.svg`: original vector linework created for Horyvane. The route motif is decorative and does not imply real distances or transport times.
+- Google and Apple marks appear only on their corresponding account integration controls. Those providers are not connected, and clicking a control explains its unavailable state.

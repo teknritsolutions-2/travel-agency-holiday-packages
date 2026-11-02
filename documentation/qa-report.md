@@ -1,3 +1,5 @@
+> For the November 2026 Horyvane design refinement, see [refinement-qa.md](refinement-qa.md). This report records the original build.
+
 # Browser QA & handoff notes
 
 ## Environment and scope

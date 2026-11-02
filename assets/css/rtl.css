@@ -67,3 +67,16 @@
 [dir="rtl"] .journal-closing :is(h2, p) {
   text-align: center;
 }
+[dir="rtl"]
+  :is(
+    .stage-description,
+    .planning-footnote,
+    .auth-sketch span,
+    .mini-meta span,
+    .package-meta span,
+    .planning-stage strong
+  ) {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: right;
+}
