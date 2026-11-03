@@ -137,7 +137,7 @@ function navigation() {
     .join("");
 }
 function header() {
-  return `<header class="site-header"><div class="container header-inner">${brand()}<nav class="desktop-nav" aria-label="Main navigation"><div class="home-dropdown"><button class="home-toggle ${["index", "home2"].includes(PAGE) ? "active" : ""}" aria-expanded="false">Home ${icon("chevron", 13)}</button><div class="dropdown"><a href="${home()}">Home 1</a><a href="${url("home2")}">Home 2</a></div></div>${navigation()}</nav>${utilities()}<a class="btn header-login" href="${url("login")}">Traveler Login ${icon("arrow", 15)}</a><button class="menu-btn" aria-label="Open navigation" aria-expanded="false">${icon("menu", 25)}</button></div></header>`;
+  return `<header class="site-header"><div class="container header-inner">${brand()}<nav class="desktop-nav" aria-label="Main navigation"><div class="home-dropdown"><button class="home-toggle ${["index", "home2"].includes(PAGE) ? "active" : ""}" aria-expanded="false">Home ${icon("chevron", 13)}</button><div class="dropdown"><a href="${home()}">Home 1</a><a href="${url("home2")}">Home 2</a></div></div>${navigation()}</nav>${utilities()}<a class="btn header-login" href="${url("login")}">Login ${icon("arrow", 15)}</a><button class="menu-btn" aria-label="Open navigation" aria-expanded="false">${icon("menu", 25)}</button></div></header>`;
 }
 function footer() {
   const columns = [
@@ -1003,7 +1003,7 @@ function openDrawer() {
   $(".menu-btn").setAttribute("aria-expanded", "true");
   const shell = document.createElement("div");
   shell.id = "mobile-shell";
-  shell.innerHTML = `<div class="scrim" data-close-drawer></div><div class="drawer" role="dialog" aria-modal="true" aria-label="Main navigation"><div class="drawer-head">${brand()}<button class="icon-btn" data-close-drawer aria-label="Close navigation">${icon("close", 18)}</button></div><nav aria-label="Mobile navigation"><details><summary>Home</summary><a href="${home()}">Home 1</a><a href="${url("home2")}">Home 2</a></details>${navigation()}</nav>${utilities()}<a class="btn header-login" href="${url("login")}">Traveler Login ${icon("arrow", 17)}</a></div>`;
+  shell.innerHTML = `<div class="scrim" data-close-drawer></div><div class="drawer" role="dialog" aria-modal="true" aria-label="Main navigation"><div class="drawer-head">${brand()}<button class="icon-btn" data-close-drawer aria-label="Close navigation">${icon("close", 18)}</button></div><nav aria-label="Mobile navigation"><details><summary>Home</summary><a href="${home()}">Home 1</a><a href="${url("home2")}">Home 2</a></details>${navigation()}</nav>${utilities()}<a class="btn header-login" href="${url("login")}">Login ${icon("arrow", 17)}</a></div>`;
   document.body.append(shell);
   document.body.style.overflowY = "hidden";
   $("#app").inert = true;
