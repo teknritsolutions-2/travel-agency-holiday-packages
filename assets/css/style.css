@@ -678,34 +678,6 @@ p {
   top: 25px;
   inset-inline-start: 25px;
 }
-.mini-app {
-  background: var(--surface);
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  transform: rotate(-1.5deg);
-}
-.mini-app-head img {
-  width: 26px;
-}
-.mini-app .mini-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-block: 22px;
-}
-.mini-stats strong {
-  display: block;
-  font-size: 26px;
-  font-weight: 500;
-  color: var(--heading);
-}
-.mini-trip > img {
-  width: 74px;
-  height: 68px;
-  border-radius: 4px;
-}
 .closing {
   display: flex;
   justify-content: space-between;
@@ -937,6 +909,9 @@ p {
   max-width: 600px;
   margin-top: 20px;
 }
+.intro-section + .section {
+  padding-top: 35px;
+}
 .detail-gallery {
   display: grid;
   grid-template-columns: 1.7fr 1fr;
@@ -1096,6 +1071,9 @@ p {
   color: var(--muted);
 }
 .summary-row b {
+  min-width: 0;
+  max-width: 65%;
+  overflow-wrap: anywhere;
   font-weight: 500;
   text-align: end;
 }
@@ -1372,14 +1350,6 @@ dialog::backdrop {
   width: 40px;
   height: 38px;
 }
-.back-home {
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  font-size: var(--type-meta);
-  margin-top: 27px;
-  color: var(--muted);
-}
 .legal {
   max-width: 800px;
 }
@@ -1559,7 +1529,12 @@ dialog::backdrop {
   align-items: center;
   margin-bottom: 30px;
 }
+.dash-heading > div {
+  min-width: 0;
+  flex: 1;
+}
 .dash-heading h1 {
+  overflow-wrap: anywhere;
   font-size: 34px;
   letter-spacing: -1px;
 }
@@ -1942,9 +1917,6 @@ td .btn {
   .search-panel button span {
     display: none;
   }
-  .workspace-preview {
-    gap: 40px;
-  }
   .package-info {
     padding: 20px;
   }
@@ -2048,11 +2020,11 @@ td .btn {
   .hero-note {
     bottom: 105px;
   }
-  .hero-note > div:not(.compass) {
+  .hero-note {
     display: none;
   }
   .search-panel {
-    grid-template-columns: repeat(2, 1fr) auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 20px;
   }
   .search-panel label:nth-child(2) {
@@ -2062,10 +2034,13 @@ td .btn {
     padding-inline-start: 4px;
   }
   .search-panel button {
-    grid-column: 3;
-    grid-row: 1/3;
-    height: 100%;
-    padding-inline: 23px;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: 50px;
+    margin-inline-start: 0;
+  }
+  .search-panel button span {
+    display: inline;
   }
   .trust-strip {
     font-size: var(--type-meta);
@@ -2098,18 +2073,6 @@ td .btn {
   }
   .style-copy {
     padding: 30px;
-  }
-  .workspace-preview {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-  .workspace-preview > div:first-child {
-    max-width: 650px;
-  }
-  .mini-app {
-    max-width: 680px;
-    width: 100%;
-    transform: none;
   }
   .closing h2 {
     font-size: 30px;
@@ -2531,33 +2494,6 @@ td .btn {
   }
   .getaway h3 {
     font-size: 29px;
-  }
-  .mini-app {
-    padding: 20px;
-  }
-  .mini-app .mini-stats {
-    gap: 8px;
-  }
-  .mini-stats > div {
-    padding: 10px;
-    font-size: var(--type-meta);
-  }
-  .mini-stats strong {
-    font-size: 23px;
-  }
-  .mini-trip {
-    gap: 12px;
-    padding: 10px;
-  }
-  .mini-trip > img {
-    width: 60px;
-    height: 65px;
-  }
-  .mini-trip h4 {
-    font-size: 17px;
-  }
-  .mini-trip p {
-    font-size: var(--type-support);
   }
   .closing {
     flex-direction: column;
@@ -3039,9 +2975,6 @@ td .btn {
   .package-photo {
     height: 225px;
   }
-  .mini-trip h4 {
-    font-size: var(--type-ui);
-  }
   .dash-heading {
     flex-wrap: wrap;
   }
@@ -3309,15 +3242,6 @@ td .btn {
   .footer-bottom {
     font-size: var(--type-meta);
   }
-  .mini-app .eyebrow {
-    font-size: var(--type-meta);
-  }
-  .mini-stats > div {
-    font-size: var(--type-meta);
-  }
-  .mini-trip p {
-    font-size: var(--type-support);
-  }
   .style-copy .eyebrow {
     font-size: var(--type-support);
   }
@@ -3371,22 +3295,6 @@ td .btn {
   .doc-placeholder p {
     font-size: var(--type-support);
   }
-}
-:where(
-    .detail-layout,
-    .form-layout,
-    .two-col,
-    .package-grid,
-    .style-stage,
-    .info-grid,
-    .story-pair,
-    .workspace-preview,
-    .journal-hero,
-    .stats-grid,
-    .dash-grid
-  )
-  > * {
-  min-width: 0;
 }
 .detail-body,
 .detail-layout .sticky-card {
@@ -4406,48 +4314,48 @@ body {
   display: block;
   font-size: var(--type-meta);
 }
-.mini-app-head {
-  letter-spacing: 1px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--line);
-  align-items: center;
-  gap: 9px;
-  display: flex;
-  font-size: var(--type-meta);
-  flex-wrap: wrap;
-}
-.mini-trip {
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid var(--line);
-  align-items: center;
-  display: flex;
-  gap: 14px;
-}
-.mini-trip h4 {
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-.mini-trip p {
-  margin: 0;
-  font-size: var(--type-meta);
-}
-.mini-stats > div {
-  color: var(--muted);
-  border-radius: 5px;
-  padding: 15px;
-  background: var(--paper);
-  font-size: var(--type-meta);
-}
-.workspace-preview {
-  align-items: center;
-  grid-template-columns: 0.9fr 1.1fr;
+/* A photographic introduction to the traveler journal. */
+.workspace-feature {
   display: grid;
-  gap: 48px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
 }
-.workspace-preview p {
+.workspace-feature-photo {
+  mask: url("../images/horizon-panorama.svg") center / 100% 100% no-repeat;
+  -webkit-mask: url("../images/horizon-panorama.svg") center / 100% 100%
+    no-repeat;
+}
+.workspace-feature-photo img {
+  width: 100%;
+  height: 340px;
+}
+.workspace-feature p {
   margin-block: 20px 25px;
+  max-width: 510px;
   font-size: var(--type-support);
+}
+.catalog-preference,
+.workspace-help {
+  font-size: var(--type-support);
+  margin-block: 20px;
+}
+@media (max-width: 1000px) {
+  .workspace-feature {
+    gap: 32px;
+  }
+  .workspace-feature-photo img {
+    height: 310px;
+  }
+}
+@media (max-width: 680px) {
+  .workspace-feature {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .workspace-feature-photo img {
+    height: 230px;
+  }
 }
 /* Beyond the Map — a separate editorial narrative. */
 .about-cover {
@@ -4699,7 +4607,8 @@ body {
 }
 .auth-photo-mask {
   position: absolute;
-  inset: 16px -20px 16px 16px;
+  inset-block: 16px;
+  inset-inline: 16px -20px;
   z-index: -1;
   mask: url("../images/horizon-tall.svg") center/100% 100% no-repeat;
   -webkit-mask: url("../images/horizon-tall.svg") center/100% 100% no-repeat;
@@ -4777,43 +4686,6 @@ body {
 .auth-form .btn {
   width: 100%;
 }
-.social-signin {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-.provider-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-height: 47px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  background: var(--surface);
-  color: var(--heading);
-  font-size: var(--type-ui);
-}
-.provider-btn:hover {
-  border-color: var(--muted);
-}
-.auth-divider {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  color: var(--muted);
-  font-size: var(--type-meta);
-  margin-block: 19px 22px;
-  white-space: nowrap;
-}
-.auth-divider:before,
-.auth-divider:after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-}
 .auth-options {
   display: flex;
   justify-content: space-between;
@@ -4838,11 +4710,6 @@ body {
   color: var(--heading);
   font-size: var(--type-meta);
 }
-.auth-form > .auth-service-note {
-  font-size: var(--type-meta);
-  margin-block: 17px;
-  line-height: 1.6;
-}
 .auth-bottom {
   font-size: var(--type-ui);
   color: var(--muted);
@@ -4852,10 +4719,6 @@ body {
 .auth-bottom a {
   color: var(--heading);
   border-bottom: 1px solid var(--secondary);
-}
-.auth-form > .back-home {
-  font-size: var(--type-meta);
-  margin-top: 26px;
 }
 .auth-signup {
   grid-template-columns: 0.95fr 1.05fr;
@@ -5100,12 +4963,6 @@ body {
   .auth-signup .auth-form {
     padding: 28px;
   }
-  .workspace-preview {
-    gap: 30px;
-  }
-  .mini-app {
-    transform: none;
-  }
   .journal-stamp {
     width: 105px;
     height: 105px;
@@ -5116,10 +4973,6 @@ body {
   .philosophy-notes {
     grid-template-columns: 1fr;
     gap: 0;
-  }
-  .workspace-preview {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 30px;
   }
   .atlas-explorer {
     grid-template-columns: 1fr;
@@ -5424,8 +5277,6 @@ body {
   .editorial h2 {
     font-size: 38px;
   }
-  .editorial .eyebrow {
-  }
   .editorial .mini-meta {
     font-size: var(--type-meta);
     gap: 16px;
@@ -5447,42 +5298,6 @@ body {
   }
   .journal-inset small {
     font-size: var(--type-meta);
-  }
-  .mini-app {
-    padding: 20px;
-  }
-  .mini-app-head {
-    font-size: var(--type-meta);
-    gap: 8px;
-  }
-  .mini-app-head .tag {
-    font-size: var(--type-meta);
-  }
-  .mini-stats > div {
-    font-size: var(--type-meta);
-    padding: 12px 9px;
-  }
-  .mini-trip {
-    display: grid;
-    grid-template-columns: 60px minmax(0, 1fr);
-  }
-  .mini-trip > div {
-    min-width: 0;
-  }
-  .mini-trip > svg {
-    display: none;
-  }
-  .mini-trip h4 {
-    font-size: 20px;
-  }
-  .mini-trip p {
-    font-size: var(--type-meta);
-  }
-  .mini-trip .eyebrow {
-    font-size: var(--type-meta);
-  }
-  .workspace-preview p {
-    font-size: var(--type-support);
   }
   .footer-intro {
     gap: 18px;
@@ -5712,16 +5527,9 @@ body {
   .auth-form .field input {
     font-size: var(--type-support);
   }
-  .auth-form .auth-divider {
-    font-size: var(--type-meta);
-    gap: 10px;
-  }
   .auth-options,
   .auth-options button {
     font-size: var(--type-meta);
-  }
-  .social-signin {
-    gap: 10px;
   }
   .auth-form .btn {
     font-size: var(--type-ui);
@@ -5733,9 +5541,6 @@ body {
   .auth-signup .auth-story h2 {
     font-size: 27px;
   }
-  .auth-form > .auth-service-note {
-    font-size: var(--type-meta);
-  }
   .auth-bottom {
     font-size: var(--type-meta);
   }
@@ -5744,6 +5549,9 @@ body {
   }
   .dash-heading {
     flex-wrap: wrap;
+  }
+  .dash-heading > div {
+    flex-basis: 100%;
   }
   .dash-heading h1 {
     font-size: 29px;
@@ -5838,12 +5646,6 @@ body {
   .auth-form > .brand .brand-caption {
     font-size: 25px;
   }
-  .social-signin {
-    gap: 8px;
-  }
-  .provider-btn {
-    gap: 8px;
-  }
   .photo-journal-label {
     max-width: 210px;
   }
@@ -5936,34 +5738,8 @@ body {
     font-size: 24px;
   }
 }
-.mini-app-head > .brand-symbol,
-.mini-app-head > .brand-symbol img {
-  width: 30px;
-  height: 30px;
-}
 input::placeholder,
 textarea::placeholder {
   color: var(--muted);
   opacity: 1;
-}
-.mini-app .mini-stats {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.mini-stats > div {
-  min-width: 0;
-  overflow-wrap: break-word;
-}
-@media (max-width: 680px) {
-  .mini-app .mini-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .mini-app .mini-stats > div:last-child {
-    grid-column: 1/-1;
-    display: flex;
-    align-items: center;
-    gap: 13px;
-  }
-  .mini-app .mini-stats > div:last-child strong {
-    flex-shrink: 0;
-  }
 }

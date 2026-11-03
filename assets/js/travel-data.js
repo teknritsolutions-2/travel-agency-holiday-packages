@@ -36,42 +36,42 @@ window.ATLAS_DATA = {
           stop: "Srinagar",
           title: "A gentle arrival in the valley",
           description:
-            "Settle into Srinagar and leave the first evening open for a lakeside stroll. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Srinagar and leave the first evening open for a lakeside stroll.",
         },
         {
           day: 2,
           stop: "Srinagar",
           title: "The quiet rhythm of Dal Lake",
           description:
-            "Consider a shikara outing and a relaxed visit to the old city with a local guide. This is a suggested plan, not a confirmed reservation.",
+            "Consider a shikara outing and a relaxed visit to the old city with a local guide.",
         },
         {
           day: 3,
           stop: "Gulmarg",
           title: "A little higher, a little quieter",
           description:
-            "Explore mountain landscapes at a pace that suits your group. Discuss suitable activities and current conditions with your guide. This is a suggested plan, not a confirmed reservation.",
+            "Explore mountain landscapes at a pace that suits your group. Discuss suitable activities and current conditions with your guide.",
         },
         {
           day: 4,
           stop: "Pahalgam",
           title: "Follow the river",
           description:
-            "Spend time by the Lidder River and explore the surrounding valley at leisure. This is a suggested plan, not a confirmed reservation.",
+            "Spend time by the Lidder River and explore the surrounding valley at leisure.",
         },
         {
           day: 5,
           stop: "Sonamarg",
           title: "Make room for the mountain views",
           description:
-            "Plan a gentle scenic outing with flexible stops. Routes and access depend on local conditions. This is a suggested plan, not a confirmed reservation.",
+            "Plan a gentle scenic outing with flexible stops. Routes and access depend on local conditions.",
         },
         {
           day: 6,
           stop: "Srinagar",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -111,49 +111,49 @@ window.ATLAS_DATA = {
           stop: "Srinagar",
           title: "A gentle arrival in the valley",
           description:
-            "Settle into Srinagar and leave the first evening open for a lakeside stroll. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Srinagar and leave the first evening open for a lakeside stroll.",
         },
         {
           day: 2,
           stop: "Srinagar",
           title: "The quiet rhythm of Dal Lake",
           description:
-            "Consider a shikara outing and a relaxed visit to the old city with a local guide. This is a suggested plan, not a confirmed reservation.",
+            "Consider a shikara outing and a relaxed visit to the old city with a local guide.",
         },
         {
           day: 3,
           stop: "Gulmarg",
           title: "A little higher, a little quieter",
           description:
-            "Explore mountain landscapes at a pace that suits your group. Discuss suitable activities and current conditions with your guide. This is a suggested plan, not a confirmed reservation.",
+            "Explore mountain landscapes at a pace that suits your group. Discuss suitable activities and current conditions with your guide.",
         },
         {
           day: 4,
           stop: "Pahalgam",
           title: "Follow the river",
           description:
-            "Spend time by the Lidder River and explore the surrounding valley at leisure. This is a suggested plan, not a confirmed reservation.",
+            "Spend time by the Lidder River and explore the surrounding valley at leisure.",
         },
         {
           day: 5,
           stop: "Sonamarg",
           title: "Make room for the mountain views",
           description:
-            "Plan a gentle scenic outing with flexible stops. Routes and access depend on local conditions. This is a suggested plan, not a confirmed reservation.",
+            "Plan a gentle scenic outing with flexible stops. Routes and access depend on local conditions.",
         },
         {
           day: 6,
           stop: "Srinagar",
           title: "The small details of the city",
           description:
-            "Leave time for crafts, a market wander and a leisurely Kashmiri meal. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for crafts, a market wander and a leisurely Kashmiri meal.",
         },
         {
           day: 7,
           stop: "Srinagar",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -193,35 +193,35 @@ window.ATLAS_DATA = {
           stop: "Kochi",
           title: "A warm Kerala welcome",
           description:
-            "Settle into Kochi and take a gentle walk around the heritage streets of Fort Kochi. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Kochi and take a gentle walk around the heritage streets of Fort Kochi.",
         },
         {
           day: 2,
           stop: "Munnar",
           title: "Into the tea country",
           description:
-            "Journey towards Munnar with room for scenic stops and an unhurried evening. This is a suggested plan, not a confirmed reservation.",
+            "Journey towards Munnar with room for scenic stops and an unhurried evening.",
         },
         {
           day: 3,
           stop: "Munnar",
           title: "Tea trails and misty mornings",
           description:
-            "Explore tea-growing landscapes with a local guide, then enjoy an afternoon at your own pace. This is a suggested plan, not a confirmed reservation.",
+            "Explore tea-growing landscapes with a local guide, then enjoy an afternoon at your own pace.",
         },
         {
           day: 4,
           stop: "Thekkady",
           title: "A greener kind of day",
           description:
-            "Consider a spice-garden visit or a guided nature experience. Activities depend on access and provider arrangements. This is a suggested plan, not a confirmed reservation.",
+            "Consider a spice-garden visit or a guided nature experience. Activities depend on access and provider arrangements.",
         },
         {
           day: 5,
           stop: "Alleppey",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -261,42 +261,42 @@ window.ATLAS_DATA = {
           stop: "Kochi",
           title: "A warm Kerala welcome",
           description:
-            "Settle into Kochi and take a gentle walk around the heritage streets of Fort Kochi. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Kochi and take a gentle walk around the heritage streets of Fort Kochi.",
         },
         {
           day: 2,
           stop: "Munnar",
           title: "Into the tea country",
           description:
-            "Journey towards Munnar with room for scenic stops and an unhurried evening. This is a suggested plan, not a confirmed reservation.",
+            "Journey towards Munnar with room for scenic stops and an unhurried evening.",
         },
         {
           day: 3,
           stop: "Munnar",
           title: "Tea trails and misty mornings",
           description:
-            "Explore tea-growing landscapes with a local guide, then enjoy an afternoon at your own pace. This is a suggested plan, not a confirmed reservation.",
+            "Explore tea-growing landscapes with a local guide, then enjoy an afternoon at your own pace.",
         },
         {
           day: 4,
           stop: "Thekkady",
           title: "A greener kind of day",
           description:
-            "Consider a spice-garden visit or a guided nature experience. Activities depend on access and provider arrangements. This is a suggested plan, not a confirmed reservation.",
+            "Consider a spice-garden visit or a guided nature experience. Activities depend on access and provider arrangements.",
         },
         {
           day: 5,
           stop: "Alleppey",
           title: "Life along the backwaters",
           description:
-            "Discuss a suitable houseboat or shore-stay option and spend time enjoying the waterside landscape. This is a suggested plan, not a confirmed reservation.",
+            "Discuss a suitable houseboat or shore-stay option and spend time enjoying the waterside landscape.",
         },
         {
           day: 6,
           stop: "Alleppey",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -336,28 +336,28 @@ window.ATLAS_DATA = {
           stop: "Panaji",
           title: "Ease into island time",
           description:
-            "Begin with a relaxed arrival and a sunset stroll along the waterfront. This is a suggested plan, not a confirmed reservation.",
+            "Begin with a relaxed arrival and a sunset stroll along the waterfront.",
         },
         {
           day: 2,
           stop: "Fontainhas",
           title: "Colour around every corner",
           description:
-            "Wander the heritage lanes of Fontainhas and make room for a leisurely local lunch. This is a suggested plan, not a confirmed reservation.",
+            "Wander the heritage lanes of Fontainhas and make room for a leisurely local lunch.",
         },
         {
           day: 3,
           stop: "South Goa",
           title: "Take the slower coastal road",
           description:
-            "Discover beaches and village streets, choosing stops to suit your group. This is a suggested plan, not a confirmed reservation.",
+            "Discover beaches and village streets, choosing stops to suit your group.",
         },
         {
           day: 4,
           stop: "Palolem",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -397,35 +397,35 @@ window.ATLAS_DATA = {
           stop: "Panaji",
           title: "Ease into island time",
           description:
-            "Begin with a relaxed arrival and a sunset stroll along the waterfront. This is a suggested plan, not a confirmed reservation.",
+            "Begin with a relaxed arrival and a sunset stroll along the waterfront.",
         },
         {
           day: 2,
           stop: "Fontainhas",
           title: "Colour around every corner",
           description:
-            "Wander the heritage lanes of Fontainhas and make room for a leisurely local lunch. This is a suggested plan, not a confirmed reservation.",
+            "Wander the heritage lanes of Fontainhas and make room for a leisurely local lunch.",
         },
         {
           day: 3,
           stop: "South Goa",
           title: "Take the slower coastal road",
           description:
-            "Discover beaches and village streets, choosing stops to suit your group. This is a suggested plan, not a confirmed reservation.",
+            "Discover beaches and village streets, choosing stops to suit your group.",
         },
         {
           day: 4,
           stop: "Palolem",
           title: "A day with nothing to rush",
           description:
-            "Leave the day flexible for the beach, a book, and one more look at the sea. This is a suggested plan, not a confirmed reservation.",
+            "Leave the day flexible for the beach, a book, and one more look at the sea.",
         },
         {
           day: 5,
           stop: "Palolem",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -465,49 +465,49 @@ window.ATLAS_DATA = {
           stop: "Jaipur",
           title: "Welcome to the Pink City",
           description:
-            "Settle into Jaipur and start with a gentle neighbourhood walk. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Jaipur and start with a gentle neighbourhood walk.",
         },
         {
           day: 2,
           stop: "Jaipur",
           title: "A city told through its details",
           description:
-            "Consider the City Palace area and a respectful visit around Hawa Mahal, with a local guide. This is a suggested plan, not a confirmed reservation.",
+            "Consider the City Palace area and a respectful visit around Hawa Mahal, with a local guide.",
         },
         {
           day: 3,
           stop: "Amber Fort",
           title: "A different view of Jaipur",
           description:
-            "Build a flexible day around Amber and the surrounding landscape. Confirm opening times and access before visiting. This is a suggested plan, not a confirmed reservation.",
+            "Build a flexible day around Amber and the surrounding landscape. Confirm opening times and access before visiting.",
         },
         {
           day: 4,
           stop: "Jodhpur",
           title: "Follow the blue lanes",
           description:
-            "Explore Jodhpur\u2019s old-city streets, keeping room for local crafts and a rooftop pause. This is a suggested plan, not a confirmed reservation.",
+            "Explore Jodhpur\u2019s old-city streets, keeping room for local crafts and a rooftop pause.",
         },
         {
           day: 5,
           stop: "Jodhpur",
           title: "Stories in stone",
           description:
-            "Consider a guided fort visit and an afternoon for independent discovery. This is a suggested plan, not a confirmed reservation.",
+            "Consider a guided fort visit and an afternoon for independent discovery.",
         },
         {
           day: 6,
           stop: "Udaipur",
           title: "A lakeside change of pace",
           description:
-            "Travel onwards to Udaipur and settle into the city\u2019s lakeside rhythm. This is a suggested plan, not a confirmed reservation.",
+            "Travel onwards to Udaipur and settle into the city\u2019s lakeside rhythm.",
         },
         {
           day: 7,
           stop: "Udaipur",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -547,56 +547,56 @@ window.ATLAS_DATA = {
           stop: "Jaipur",
           title: "Welcome to the Pink City",
           description:
-            "Settle into Jaipur and start with a gentle neighbourhood walk. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Jaipur and start with a gentle neighbourhood walk.",
         },
         {
           day: 2,
           stop: "Jaipur",
           title: "A city told through its details",
           description:
-            "Consider the City Palace area and a respectful visit around Hawa Mahal, with a local guide. This is a suggested plan, not a confirmed reservation.",
+            "Consider the City Palace area and a respectful visit around Hawa Mahal, with a local guide.",
         },
         {
           day: 3,
           stop: "Amber Fort",
           title: "A different view of Jaipur",
           description:
-            "Build a flexible day around Amber and the surrounding landscape. Confirm opening times and access before visiting. This is a suggested plan, not a confirmed reservation.",
+            "Build a flexible day around Amber and the surrounding landscape. Confirm opening times and access before visiting.",
         },
         {
           day: 4,
           stop: "Jodhpur",
           title: "Follow the blue lanes",
           description:
-            "Explore Jodhpur\u2019s old-city streets, keeping room for local crafts and a rooftop pause. This is a suggested plan, not a confirmed reservation.",
+            "Explore Jodhpur\u2019s old-city streets, keeping room for local crafts and a rooftop pause.",
         },
         {
           day: 5,
           stop: "Jodhpur",
           title: "Stories in stone",
           description:
-            "Consider a guided fort visit and an afternoon for independent discovery. This is a suggested plan, not a confirmed reservation.",
+            "Consider a guided fort visit and an afternoon for independent discovery.",
         },
         {
           day: 6,
           stop: "Udaipur",
           title: "A lakeside change of pace",
           description:
-            "Travel onwards to Udaipur and settle into the city\u2019s lakeside rhythm. This is a suggested plan, not a confirmed reservation.",
+            "Travel onwards to Udaipur and settle into the city\u2019s lakeside rhythm.",
         },
         {
           day: 7,
           stop: "Udaipur",
           title: "A day for the beautiful detours",
           description:
-            "Explore palace courtyards and waterside paths with a flexible sightseeing plan. This is a suggested plan, not a confirmed reservation.",
+            "Explore palace courtyards and waterside paths with a flexible sightseeing plan.",
         },
         {
           day: 8,
           stop: "Udaipur",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -636,49 +636,49 @@ window.ATLAS_DATA = {
           stop: "Leh",
           title: "Arrive with time to settle",
           description:
-            "Keep the arrival day restful. Discuss altitude, acclimatisation and suitable activity with qualified local professionals before travelling. This is a suggested plan, not a confirmed reservation.",
+            "Keep the arrival day restful. Discuss altitude, acclimatisation and suitable activity with qualified local professionals before travelling.",
         },
         {
           day: 2,
           stop: "Leh",
           title: "A gentle first look",
           description:
-            "Keep the pace easy and adapt sightseeing to personal comfort and local advice. This is a suggested plan, not a confirmed reservation.",
+            "Keep the pace easy and adapt sightseeing to personal comfort and local advice.",
         },
         {
           day: 3,
           stop: "Sham Valley",
           title: "Stories along the valley",
           description:
-            "Consider a guided journey through the valley with monastery and landscape stops where appropriate. This is a suggested plan, not a confirmed reservation.",
+            "Consider a guided journey through the valley with monastery and landscape stops where appropriate.",
         },
         {
           day: 4,
           stop: "Nubra",
           title: "A landscape unlike any other",
           description:
-            "Discuss a suitable route and travel plan with your operator. Permits, access and conditions must be verified. This is a suggested plan, not a confirmed reservation.",
+            "Discuss a suitable route and travel plan with your operator. Permits, access and conditions must be verified.",
         },
         {
           day: 5,
           stop: "Nubra",
           title: "Find the quieter moments",
           description:
-            "Leave room for village visits, scenery and rest in a locally guided plan. This is a suggested plan, not a confirmed reservation.",
+            "Leave room for village visits, scenery and rest in a locally guided plan.",
         },
         {
           day: 6,
           stop: "Pangong",
           title: "An open-sky perspective",
           description:
-            "A lake-region excursion is an optional planning idea only. Confirm suitability, route access and altitude considerations with your provider. This is a suggested plan, not a confirmed reservation.",
+            "A lake-region excursion is an optional planning idea only. Confirm suitability, route access and altitude considerations with your provider.",
         },
         {
           day: 7,
           stop: "Pangong",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -718,56 +718,56 @@ window.ATLAS_DATA = {
           stop: "Leh",
           title: "Arrive with time to settle",
           description:
-            "Keep the arrival day restful. Discuss altitude, acclimatisation and suitable activity with qualified local professionals before travelling. This is a suggested plan, not a confirmed reservation.",
+            "Keep the arrival day restful. Discuss altitude, acclimatisation and suitable activity with qualified local professionals before travelling.",
         },
         {
           day: 2,
           stop: "Leh",
           title: "A gentle first look",
           description:
-            "Keep the pace easy and adapt sightseeing to personal comfort and local advice. This is a suggested plan, not a confirmed reservation.",
+            "Keep the pace easy and adapt sightseeing to personal comfort and local advice.",
         },
         {
           day: 3,
           stop: "Sham Valley",
           title: "Stories along the valley",
           description:
-            "Consider a guided journey through the valley with monastery and landscape stops where appropriate. This is a suggested plan, not a confirmed reservation.",
+            "Consider a guided journey through the valley with monastery and landscape stops where appropriate.",
         },
         {
           day: 4,
           stop: "Nubra",
           title: "A landscape unlike any other",
           description:
-            "Discuss a suitable route and travel plan with your operator. Permits, access and conditions must be verified. This is a suggested plan, not a confirmed reservation.",
+            "Discuss a suitable route and travel plan with your operator. Permits, access and conditions must be verified.",
         },
         {
           day: 5,
           stop: "Nubra",
           title: "Find the quieter moments",
           description:
-            "Leave room for village visits, scenery and rest in a locally guided plan. This is a suggested plan, not a confirmed reservation.",
+            "Leave room for village visits, scenery and rest in a locally guided plan.",
         },
         {
           day: 6,
           stop: "Pangong",
           title: "An open-sky perspective",
           description:
-            "A lake-region excursion is an optional planning idea only. Confirm suitability, route access and altitude considerations with your provider. This is a suggested plan, not a confirmed reservation.",
+            "A lake-region excursion is an optional planning idea only. Confirm suitability, route access and altitude considerations with your provider.",
         },
         {
           day: 7,
           stop: "Pangong",
           title: "One more day, your way",
           description:
-            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest. This is a suggested plan, not a confirmed reservation.",
+            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest.",
         },
         {
           day: 8,
           stop: "Pangong",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -807,42 +807,42 @@ window.ATLAS_DATA = {
           stop: "Ubud",
           title: "A softer landing in Bali",
           description:
-            "Settle into Ubud and let your first evening unfold at a gentle pace. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Ubud and let your first evening unfold at a gentle pace.",
         },
         {
           day: 2,
           stop: "Ubud",
           title: "Craft, culture and a little curiosity",
           description:
-            "Consider a guided village walk, local crafts and a relaxed Balinese meal. This is a suggested plan, not a confirmed reservation.",
+            "Consider a guided village walk, local crafts and a relaxed Balinese meal.",
         },
         {
           day: 3,
           stop: "Tegalalang",
           title: "Follow the green horizon",
           description:
-            "Spend a day discovering rice-growing landscapes while respecting local access and working farmland. This is a suggested plan, not a confirmed reservation.",
+            "Spend a day discovering rice-growing landscapes while respecting local access and working farmland.",
         },
         {
           day: 4,
           stop: "Uluwatu",
           title: "Where the land meets the sea",
           description:
-            "Plan coastal viewpoints and a respectful temple visit, checking current entry and dress guidance locally. This is a suggested plan, not a confirmed reservation.",
+            "Plan coastal viewpoints and a respectful temple visit, checking current entry and dress guidance locally.",
         },
         {
           day: 5,
           stop: "Seminyak",
           title: "An afternoon with no agenda",
           description:
-            "Leave time for caf\u00e9s, the beach and an unhurried sunset. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for caf\u00e9s, the beach and an unhurried sunset.",
         },
         {
           day: 6,
           stop: "Ubud",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -882,49 +882,49 @@ window.ATLAS_DATA = {
           stop: "Ubud",
           title: "A softer landing in Bali",
           description:
-            "Settle into Ubud and let your first evening unfold at a gentle pace. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Ubud and let your first evening unfold at a gentle pace.",
         },
         {
           day: 2,
           stop: "Ubud",
           title: "Craft, culture and a little curiosity",
           description:
-            "Consider a guided village walk, local crafts and a relaxed Balinese meal. This is a suggested plan, not a confirmed reservation.",
+            "Consider a guided village walk, local crafts and a relaxed Balinese meal.",
         },
         {
           day: 3,
           stop: "Tegalalang",
           title: "Follow the green horizon",
           description:
-            "Spend a day discovering rice-growing landscapes while respecting local access and working farmland. This is a suggested plan, not a confirmed reservation.",
+            "Spend a day discovering rice-growing landscapes while respecting local access and working farmland.",
         },
         {
           day: 4,
           stop: "Uluwatu",
           title: "Where the land meets the sea",
           description:
-            "Plan coastal viewpoints and a respectful temple visit, checking current entry and dress guidance locally. This is a suggested plan, not a confirmed reservation.",
+            "Plan coastal viewpoints and a respectful temple visit, checking current entry and dress guidance locally.",
         },
         {
           day: 5,
           stop: "Seminyak",
           title: "An afternoon with no agenda",
           description:
-            "Leave time for caf\u00e9s, the beach and an unhurried sunset. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for caf\u00e9s, the beach and an unhurried sunset.",
         },
         {
           day: 6,
           stop: "Ubud",
           title: "A day for your own discoveries",
           description:
-            "Choose an optional wellness session, cooking experience or simply more time to relax. This is a suggested plan, not a confirmed reservation.",
+            "Choose an optional wellness session, cooking experience or simply more time to relax.",
         },
         {
           day: 7,
           stop: "Ubud",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -964,56 +964,56 @@ window.ATLAS_DATA = {
           stop: "Tokyo",
           title: "Your first chapter in Japan",
           description:
-            "Settle into Tokyo and begin with a gentle neighbourhood exploration. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Tokyo and begin with a gentle neighbourhood exploration.",
         },
         {
           day: 2,
           stop: "Tokyo",
           title: "The city, one neighbourhood at a time",
           description:
-            "Build a day around a few local districts, independent shops and places to eat. This is a suggested plan, not a confirmed reservation.",
+            "Build a day around a few local districts, independent shops and places to eat.",
         },
         {
           day: 3,
           stop: "Hakone",
           title: "A change of scenery",
           description:
-            "Consider a scenic break around Hakone, with route and transport options confirmed separately. This is a suggested plan, not a confirmed reservation.",
+            "Consider a scenic break around Hakone, with route and transport options confirmed separately.",
         },
         {
           day: 4,
           stop: "Kyoto",
           title: "Arrive in a different rhythm",
           description:
-            "Continue your suggested route to Kyoto and leave the evening flexible. This is a suggested plan, not a confirmed reservation.",
+            "Continue your suggested route to Kyoto and leave the evening flexible.",
         },
         {
           day: 5,
           stop: "Kyoto",
           title: "A thoughtful look at old traditions",
           description:
-            "Plan respectful visits to selected temples and cultural neighbourhoods with a local guide. This is a suggested plan, not a confirmed reservation.",
+            "Plan respectful visits to selected temples and cultural neighbourhoods with a local guide.",
         },
         {
           day: 6,
           stop: "Arashiyama",
           title: "A little time among the green",
           description:
-            "Enjoy a nature-led day around Arashiyama, avoiding a rushed checklist. This is a suggested plan, not a confirmed reservation.",
+            "Enjoy a nature-led day around Arashiyama, avoiding a rushed checklist.",
         },
         {
           day: 7,
           stop: "Kyoto",
           title: "The beautiful things between the sights",
           description:
-            "Leave room for craft studios, a tea experience or another neighbourhood walk. This is a suggested plan, not a confirmed reservation.",
+            "Leave room for craft studios, a tea experience or another neighbourhood walk.",
         },
         {
           day: 8,
           stop: "Kyoto",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1053,63 +1053,63 @@ window.ATLAS_DATA = {
           stop: "Tokyo",
           title: "Your first chapter in Japan",
           description:
-            "Settle into Tokyo and begin with a gentle neighbourhood exploration. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Tokyo and begin with a gentle neighbourhood exploration.",
         },
         {
           day: 2,
           stop: "Tokyo",
           title: "The city, one neighbourhood at a time",
           description:
-            "Build a day around a few local districts, independent shops and places to eat. This is a suggested plan, not a confirmed reservation.",
+            "Build a day around a few local districts, independent shops and places to eat.",
         },
         {
           day: 3,
           stop: "Hakone",
           title: "A change of scenery",
           description:
-            "Consider a scenic break around Hakone, with route and transport options confirmed separately. This is a suggested plan, not a confirmed reservation.",
+            "Consider a scenic break around Hakone, with route and transport options confirmed separately.",
         },
         {
           day: 4,
           stop: "Kyoto",
           title: "Arrive in a different rhythm",
           description:
-            "Continue your suggested route to Kyoto and leave the evening flexible. This is a suggested plan, not a confirmed reservation.",
+            "Continue your suggested route to Kyoto and leave the evening flexible.",
         },
         {
           day: 5,
           stop: "Kyoto",
           title: "A thoughtful look at old traditions",
           description:
-            "Plan respectful visits to selected temples and cultural neighbourhoods with a local guide. This is a suggested plan, not a confirmed reservation.",
+            "Plan respectful visits to selected temples and cultural neighbourhoods with a local guide.",
         },
         {
           day: 6,
           stop: "Arashiyama",
           title: "A little time among the green",
           description:
-            "Enjoy a nature-led day around Arashiyama, avoiding a rushed checklist. This is a suggested plan, not a confirmed reservation.",
+            "Enjoy a nature-led day around Arashiyama, avoiding a rushed checklist.",
         },
         {
           day: 7,
           stop: "Kyoto",
           title: "The beautiful things between the sights",
           description:
-            "Leave room for craft studios, a tea experience or another neighbourhood walk. This is a suggested plan, not a confirmed reservation.",
+            "Leave room for craft studios, a tea experience or another neighbourhood walk.",
         },
         {
           day: 8,
           stop: "Kyoto",
           title: "One more day, your way",
           description:
-            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest. This is a suggested plan, not a confirmed reservation.",
+            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest.",
         },
         {
           day: 9,
           stop: "Kyoto",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1149,49 +1149,49 @@ window.ATLAS_DATA = {
           stop: "Lucerne",
           title: "A lakeside beginning",
           description:
-            "Settle into Lucerne and explore the old-town streets at leisure. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Lucerne and explore the old-town streets at leisure.",
         },
         {
           day: 2,
           stop: "Lucerne",
           title: "Let the lake set the pace",
           description:
-            "Consider a lakeside walk or an optional scenic outing, with tickets confirmed separately. This is a suggested plan, not a confirmed reservation.",
+            "Consider a lakeside walk or an optional scenic outing, with tickets confirmed separately.",
         },
         {
           day: 3,
           stop: "Interlaken",
           title: "Follow the Alpine horizon",
           description:
-            "Continue towards Interlaken, leaving room for landscape stops. This is a suggested plan, not a confirmed reservation.",
+            "Continue towards Interlaken, leaving room for landscape stops.",
         },
         {
           day: 4,
           stop: "Lauterbrunnen",
           title: "A valley made for slowing down",
           description:
-            "Explore village paths and waterfall views at a comfortable pace. This is a suggested plan, not a confirmed reservation.",
+            "Explore village paths and waterfall views at a comfortable pace.",
         },
         {
           day: 5,
           stop: "Lauterbrunnen",
           title: "A day for mountain possibilities",
           description:
-            "Discuss suitable viewpoints and optional mountain transport with your provider. Weather, access and fares vary. This is a suggested plan, not a confirmed reservation.",
+            "Discuss suitable viewpoints and optional mountain transport with your provider. Weather, access and fares vary.",
         },
         {
           day: 6,
           stop: "Zurich",
           title: "A city by the water",
           description:
-            "Enjoy a relaxed final city stay with time for old-town streets and the lakeside. This is a suggested plan, not a confirmed reservation.",
+            "Enjoy a relaxed final city stay with time for old-town streets and the lakeside.",
         },
         {
           day: 7,
           stop: "Zurich",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1231,56 +1231,56 @@ window.ATLAS_DATA = {
           stop: "Lucerne",
           title: "A lakeside beginning",
           description:
-            "Settle into Lucerne and explore the old-town streets at leisure. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Lucerne and explore the old-town streets at leisure.",
         },
         {
           day: 2,
           stop: "Lucerne",
           title: "Let the lake set the pace",
           description:
-            "Consider a lakeside walk or an optional scenic outing, with tickets confirmed separately. This is a suggested plan, not a confirmed reservation.",
+            "Consider a lakeside walk or an optional scenic outing, with tickets confirmed separately.",
         },
         {
           day: 3,
           stop: "Interlaken",
           title: "Follow the Alpine horizon",
           description:
-            "Continue towards Interlaken, leaving room for landscape stops. This is a suggested plan, not a confirmed reservation.",
+            "Continue towards Interlaken, leaving room for landscape stops.",
         },
         {
           day: 4,
           stop: "Lauterbrunnen",
           title: "A valley made for slowing down",
           description:
-            "Explore village paths and waterfall views at a comfortable pace. This is a suggested plan, not a confirmed reservation.",
+            "Explore village paths and waterfall views at a comfortable pace.",
         },
         {
           day: 5,
           stop: "Lauterbrunnen",
           title: "A day for mountain possibilities",
           description:
-            "Discuss suitable viewpoints and optional mountain transport with your provider. Weather, access and fares vary. This is a suggested plan, not a confirmed reservation.",
+            "Discuss suitable viewpoints and optional mountain transport with your provider. Weather, access and fares vary.",
         },
         {
           day: 6,
           stop: "Zurich",
           title: "A city by the water",
           description:
-            "Enjoy a relaxed final city stay with time for old-town streets and the lakeside. This is a suggested plan, not a confirmed reservation.",
+            "Enjoy a relaxed final city stay with time for old-town streets and the lakeside.",
         },
         {
           day: 7,
           stop: "Zurich",
           title: "One more day, your way",
           description:
-            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest. This is a suggested plan, not a confirmed reservation.",
+            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest.",
         },
         {
           day: 8,
           stop: "Zurich",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1320,35 +1320,35 @@ window.ATLAS_DATA = {
           stop: "Mal\u00e9",
           title: "A beautiful beginning in blue",
           description:
-            "Arrive and connect with your provider for the separately arranged island transfer. This is a suggested plan, not a confirmed reservation.",
+            "Arrive and connect with your provider for the separately arranged island transfer.",
         },
         {
           day: 2,
           stop: "Island stay",
           title: "Wake up with nowhere to rush",
           description:
-            "Make time for a quiet beach morning and a relaxed island day. This is a suggested plan, not a confirmed reservation.",
+            "Make time for a quiet beach morning and a relaxed island day.",
         },
         {
           day: 3,
           stop: "Lagoon",
           title: "Follow the colour of the water",
           description:
-            "Discuss suitable lagoon activities with qualified local providers. Equipment, supervision and inclusions must be confirmed. This is a suggested plan, not a confirmed reservation.",
+            "Discuss suitable lagoon activities with qualified local providers. Equipment, supervision and inclusions must be confirmed.",
         },
         {
           day: 4,
           stop: "Island leisure",
           title: "A day that belongs to you",
           description:
-            "Choose an optional experience or leave the whole day open for rest. This is a suggested plan, not a confirmed reservation.",
+            "Choose an optional experience or leave the whole day open for rest.",
         },
         {
           day: 5,
           stop: "Island stay",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1388,42 +1388,42 @@ window.ATLAS_DATA = {
           stop: "Mal\u00e9",
           title: "A beautiful beginning in blue",
           description:
-            "Arrive and connect with your provider for the separately arranged island transfer. This is a suggested plan, not a confirmed reservation.",
+            "Arrive and connect with your provider for the separately arranged island transfer.",
         },
         {
           day: 2,
           stop: "Island stay",
           title: "Wake up with nowhere to rush",
           description:
-            "Make time for a quiet beach morning and a relaxed island day. This is a suggested plan, not a confirmed reservation.",
+            "Make time for a quiet beach morning and a relaxed island day.",
         },
         {
           day: 3,
           stop: "Lagoon",
           title: "Follow the colour of the water",
           description:
-            "Discuss suitable lagoon activities with qualified local providers. Equipment, supervision and inclusions must be confirmed. This is a suggested plan, not a confirmed reservation.",
+            "Discuss suitable lagoon activities with qualified local providers. Equipment, supervision and inclusions must be confirmed.",
         },
         {
           day: 4,
           stop: "Island leisure",
           title: "A day that belongs to you",
           description:
-            "Choose an optional experience or leave the whole day open for rest. This is a suggested plan, not a confirmed reservation.",
+            "Choose an optional experience or leave the whole day open for rest.",
         },
         {
           day: 5,
           stop: "Island stay",
           title: "One more slow morning",
           description:
-            "Enjoy time by the water before preparing for your onward journey. This is a suggested plan, not a confirmed reservation.",
+            "Enjoy time by the water before preparing for your onward journey.",
         },
         {
           day: 6,
           stop: "Island stay",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1463,63 +1463,63 @@ window.ATLAS_DATA = {
           stop: "Rome",
           title: "Begin with a Roman evening",
           description:
-            "Settle into Rome and explore your neighbourhood at an easy pace. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Rome and explore your neighbourhood at an easy pace.",
         },
         {
           day: 2,
           stop: "Rome",
           title: "Stories around every corner",
           description:
-            "Plan a considered cultural walk and book any timed-entry sights with your provider separately. This is a suggested plan, not a confirmed reservation.",
+            "Plan a considered cultural walk and book any timed-entry sights with your provider separately.",
         },
         {
           day: 3,
           stop: "Florence",
           title: "A little Renaissance perspective",
           description:
-            "Continue towards Florence and take a relaxed first walk through the historic centre. This is a suggested plan, not a confirmed reservation.",
+            "Continue towards Florence and take a relaxed first walk through the historic centre.",
         },
         {
           day: 4,
           stop: "Florence",
           title: "Art, craft and a long lunch",
           description:
-            "Build the day around a few personally chosen art or craft experiences. This is a suggested plan, not a confirmed reservation.",
+            "Build the day around a few personally chosen art or craft experiences.",
         },
         {
           day: 5,
           stop: "Cinque Terre",
           title: "Find a new shade of coastal colour",
           description:
-            "Explore a selected coastal village at leisure. Transport, trails and access must be checked locally. This is a suggested plan, not a confirmed reservation.",
+            "Explore a selected coastal village at leisure. Transport, trails and access must be checked locally.",
         },
         {
           day: 6,
           stop: "Cinque Terre",
           title: "Take the day as it comes",
           description:
-            "Leave room for coastal views, local food and a slower afternoon. This is a suggested plan, not a confirmed reservation.",
+            "Leave room for coastal views, local food and a slower afternoon.",
         },
         {
           day: 7,
           stop: "Venice",
           title: "Arrive by a different kind of street",
           description:
-            "Continue your suggested route to Venice and explore on foot at your own pace. This is a suggested plan, not a confirmed reservation.",
+            "Continue your suggested route to Venice and explore on foot at your own pace.",
         },
         {
           day: 8,
           stop: "Venice",
           title: "A quieter corner of the city",
           description:
-            "Make space for less hurried neighbourhood wandering and respectful cultural visits. This is a suggested plan, not a confirmed reservation.",
+            "Make space for less hurried neighbourhood wandering and respectful cultural visits.",
         },
         {
           day: 9,
           stop: "Venice",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },
@@ -1559,70 +1559,70 @@ window.ATLAS_DATA = {
           stop: "Rome",
           title: "Begin with a Roman evening",
           description:
-            "Settle into Rome and explore your neighbourhood at an easy pace. This is a suggested plan, not a confirmed reservation.",
+            "Settle into Rome and explore your neighbourhood at an easy pace.",
         },
         {
           day: 2,
           stop: "Rome",
           title: "Stories around every corner",
           description:
-            "Plan a considered cultural walk and book any timed-entry sights with your provider separately. This is a suggested plan, not a confirmed reservation.",
+            "Plan a considered cultural walk and book any timed-entry sights with your provider separately.",
         },
         {
           day: 3,
           stop: "Florence",
           title: "A little Renaissance perspective",
           description:
-            "Continue towards Florence and take a relaxed first walk through the historic centre. This is a suggested plan, not a confirmed reservation.",
+            "Continue towards Florence and take a relaxed first walk through the historic centre.",
         },
         {
           day: 4,
           stop: "Florence",
           title: "Art, craft and a long lunch",
           description:
-            "Build the day around a few personally chosen art or craft experiences. This is a suggested plan, not a confirmed reservation.",
+            "Build the day around a few personally chosen art or craft experiences.",
         },
         {
           day: 5,
           stop: "Cinque Terre",
           title: "Find a new shade of coastal colour",
           description:
-            "Explore a selected coastal village at leisure. Transport, trails and access must be checked locally. This is a suggested plan, not a confirmed reservation.",
+            "Explore a selected coastal village at leisure. Transport, trails and access must be checked locally.",
         },
         {
           day: 6,
           stop: "Cinque Terre",
           title: "Take the day as it comes",
           description:
-            "Leave room for coastal views, local food and a slower afternoon. This is a suggested plan, not a confirmed reservation.",
+            "Leave room for coastal views, local food and a slower afternoon.",
         },
         {
           day: 7,
           stop: "Venice",
           title: "Arrive by a different kind of street",
           description:
-            "Continue your suggested route to Venice and explore on foot at your own pace. This is a suggested plan, not a confirmed reservation.",
+            "Continue your suggested route to Venice and explore on foot at your own pace.",
         },
         {
           day: 8,
           stop: "Venice",
           title: "A quieter corner of the city",
           description:
-            "Make space for less hurried neighbourhood wandering and respectful cultural visits. This is a suggested plan, not a confirmed reservation.",
+            "Make space for less hurried neighbourhood wandering and respectful cultural visits.",
         },
         {
           day: 9,
           stop: "Venice",
           title: "One more day, your way",
           description:
-            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest. This is a suggested plan, not a confirmed reservation.",
+            "Keep this extra day flexible for your favourite places, a new discovery or a little more rest.",
         },
         {
           day: 10,
           stop: "Venice",
           title: "Until the next chapter",
           description:
-            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider. This is a suggested plan, not a confirmed reservation.",
+            "Leave time for a gentle final morning and your separately arranged onward journey. Final transport and departure details must be confirmed with your provider.",
         },
       ],
     },

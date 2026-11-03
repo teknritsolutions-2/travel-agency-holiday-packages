@@ -60,7 +60,7 @@ html[data-theme="dark"] .auth-bottom a {
   color: var(--accent-text);
 }
 html[data-theme="dark"]
-  :is(.package-card, .panel, .stat-card, .filter-panel, .auth-form, .mini-app) {
+  :is(.package-card, .panel, .stat-card, .filter-panel, .auth-form) {
   box-shadow: 0 8px 26px #00000018;
 }
 html[data-theme="dark"] .planning-photo-note {
@@ -77,9 +77,6 @@ html[data-theme="dark"] .atlas-pick:hover img {
 html[data-theme="dark"] .postcard {
   background: #292f38;
   border-color: #43505f;
-}
-html[data-theme="dark"] .provider-btn {
-  background: #292f38;
 }
 html[data-theme="dark"] .auth-signup .auth-form {
   border-color: #43505f;

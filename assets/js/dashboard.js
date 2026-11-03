@@ -27,7 +27,7 @@ function dashNav() {
 function dashboardShell() {
   const profile = dashProfile();
   $("#app").innerHTML =
-    `<div class="dashboard-shell"><aside class="dashboard-sidebar" aria-label="Workspace navigation">${brand()}<span class="sidebar-label">YOUR TRAVEL WORKSPACE</span><nav class="dashboard-nav">${dashNav()}</nav><div class="sidebar-utilities">${utilities()}</div><div class="sidebar-bottom"><a href="${home()}">${icon("compass", 17)} Back to exploring</a><button id="guest-logout">${icon("logout", 17)} Leave guest workspace</button></div></aside><div class="dashboard-main"><header class="dashboard-topbar">${brand().replace('class="brand"', 'class="brand dashboard-mobile-brand"')}<button class="dashboard-menu" aria-label="Open workspace navigation" aria-expanded="false">${icon("menu", 23)}</button><span>Your next adventure, thoughtfully organised.</span><div class="actions">${utilities()}<a class="icon-btn" href="#notifications" aria-label="Notifications">${icon("bell", 18)}</a><a href="#profile" class="avatar" aria-label="Your profile">${esc(profile.name.charAt(0).toUpperCase())}</a></div></header><main class="dashboard-content" id="main"></main></div></div>`;
+    `<div class="dashboard-shell"><aside class="dashboard-sidebar" aria-label="Workspace navigation">${brand()}<span class="sidebar-label">YOUR TRAVEL WORKSPACE</span><nav class="dashboard-nav">${dashNav()}</nav><div class="sidebar-utilities">${utilities()}</div><div class="sidebar-bottom"><a href="${home()}">${icon("compass", 17)} Back to exploring</a><button id="workspace-close">${icon("logout", 17)} Close workspace</button></div></aside><div class="dashboard-main"><header class="dashboard-topbar">${brand().replace('class="brand"', 'class="brand dashboard-mobile-brand"')}<button class="dashboard-menu" aria-label="Open workspace navigation" aria-expanded="false">${icon("menu", 23)}</button><span>Your next adventure, thoughtfully organised.</span><div class="actions">${utilities()}<a class="icon-btn" href="#notifications" aria-label="Notifications">${icon("bell", 18)}</a><a href="#profile" class="avatar" aria-label="Your profile">${esc(profile.name.charAt(0).toUpperCase())}</a></div></header><main class="dashboard-content" id="main"></main></div></div>`;
   $(".dashboard-menu").addEventListener("click", openDashDrawer);
 }
 function dashHeading(title, subtitle, action = "") {
@@ -50,7 +50,7 @@ function activeRequests() {
 function tripCard(r) {
   const p = PACKAGES.find((p) => p.id === r.packageId);
   if (!p) return "";
-  return `<article class="trip-card">${img(p.image, p.destination)}<div class="trip-copy"><span class="${statusClass(r.status)}">${esc(r.status)} · Local planning request</span><h3>${p.title}</h3><p>${icon("pin", 14)} ${esc(r.destination)} &nbsp; · &nbsp; ${displayDate(r.date)} &nbsp; · &nbsp; ${r.adults} adults${r.children ? " + " + r.children + " children" : ""}</p><div class="actions"><button class="btn small" data-request-view="${r.id}">View request ${icon("arrow", 15)}</button><a class="btn outline small" href="${url("booking", "?edit=" + r.id)}">Edit plan</a><button class="btn outline small" data-view-itinerary="${p.id}">View itinerary</button></div></div></article>`;
+  return `<article class="trip-card">${img(p.image, p.destination)}<div class="trip-copy"><span class="${statusClass(r.status)}">${esc(r.status)} · Enquiry draft</span><h3>${p.title}</h3><p>${icon("pin", 14)} ${esc(r.destination)} &nbsp; · &nbsp; ${displayDate(r.date)} &nbsp; · &nbsp; ${r.adults} adults${r.children ? " + " + r.children + " children" : ""}</p><div class="actions"><button class="btn small" data-request-view="${r.id}">View request ${icon("arrow", 15)}</button><a class="btn outline small" href="${url("booking", "?edit=" + r.id)}">Edit plan</a><button class="btn outline small" data-view-itinerary="${p.id}">View itinerary</button></div></div></article>`;
 }
 function overview() {
   const reqs = read("requests"),
@@ -58,7 +58,7 @@ function overview() {
     saved = favoriteIds(),
     events = read("events");
   return `${dashHeading("A world of possibility, " + esc(dashProfile().name.split(" ")[0]) + ".", "A little organisation. A lot to look forward to.", linkBtn("Plan a journey", "booking", "secondary"))}<div class="stats-grid">${[
-    ["Local trip plans", active.length, "Drafts, not reservations", "bag"],
+    ["Trip plans", active.length, "Your journeys in the making", "bag"],
     ["Saved journeys", saved.length, "Your next great possibilities", "heart"],
     [
       "Planning itineraries",
@@ -67,9 +67,9 @@ function overview() {
       "map",
     ],
     [
-      "Issued documents",
+      "Travel documents",
       sessionDocuments.length,
-      "Files you supplied this session",
+      "Your current document library",
       "file",
     ],
   ]
@@ -79,7 +79,7 @@ function overview() {
     )
     .join(
       "",
-    )}</div><div class="dash-welcome"><div><span class="eyebrow">Your next chapter</span><h2>Good things begin<br>with a little curiosity.</h2><p>Build your wish list, shape a route, and keep your plans close. Your next story is waiting to happen.</p>${linkBtn("Find your next escape", "destinations", "secondary small")}</div>${img("kashmir.webp", "Kashmir alpine lake")}</div><div class="dash-grid"><section class="panel"><div class="panel-title"><h2>Your planning compass</h2><a href="#booking-status">View requests ${icon("arrow", 14)}</a></div><p style="font-size:var(--type-support)">The actual state of your local planning requests.</p>${[
+    )}</div><div class="dash-welcome"><div><span class="eyebrow">Your next chapter</span><h2>Good things begin<br>with a little curiosity.</h2><p>Build your wish list, shape a route, and keep your plans close. Your next story is waiting to happen.</p>${linkBtn("Find your next escape", "destinations", "secondary small")}</div>${img("kashmir.webp", "Kashmir alpine lake")}</div><div class="dash-grid"><section class="panel"><div class="panel-title"><h2>Your planning compass</h2><a href="#booking-status">View requests ${icon("arrow", 14)}</a></div><p style="font-size:var(--type-support)">Your saved enquiries at a glance.</p>${[
     ["Draft", reqs.filter((r) => r.status === "Draft").length],
     [
       "Enquiry Prepared",
@@ -93,17 +93,17 @@ function overview() {
     )
     .join(
       "",
-    )}<p style="font-size:var(--type-support);margin-top:24px">No confirmed bookings are connected to this workspace.</p></section><section class="panel"><div class="panel-title"><h2>Little steps, recent moments</h2><a href="#notifications">View all</a></div>${events.length ? events.slice(0, 3).map(eventRow).join("") : `<div class="event-row"><span class="event-dot"></span><div>Your story starts here.<small>Save a journey or prepare a plan to see your activity.</small></div></div><div class="event-row">${icon("heart", 18)}<div>Make a wish list.<small>Keep the places you’d love to visit in Saved Packages.</small></div></div>`}</section></div><section class="panel"><div class="panel-title"><h2>${active.length ? "Your latest travel plan" : "The first page is yours to write."}</h2><a href="#my-trips">My trips ${icon("arrow", 14)}</a></div>${active.length ? tripCard(active[0]) : empty("No travel plans just yet.", "Find a journey you love, then tell us what would make it yours.", "Explore journeys", "deals", "bag")}</section>`;
+    )}</section><section class="panel"><div class="panel-title"><h2>Little steps, recent moments</h2><a href="#notifications">View all</a></div>${events.length ? events.slice(0, 3).map(eventRow).join("") : `<div class="event-row"><span class="event-dot"></span><div>Your story starts here.<small>Save a journey or prepare a plan to see your activity.</small></div></div><div class="event-row">${icon("heart", 18)}<div>Make a wish list.<small>Keep the places you’d love to visit in Saved Packages.</small></div></div>`}</section></div><section class="panel"><div class="panel-title"><h2>${active.length ? "Your latest travel plan" : "The first page is yours to write."}</h2><a href="#my-trips">My trips ${icon("arrow", 14)}</a></div>${active.length ? tripCard(active[0]) : empty("No travel plans just yet.", "Find a journey you love, then tell us what would make it yours.", "Explore journeys", "deals", "bag")}</section>`;
 }
 function eventRow(e) {
   return `<div class="event-row"><span class="event-dot"></span><div>${esc(e.message)}<small>${new Date(e.date).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}</small></div></div>`;
 }
 function trips() {
   let rs = activeRequests();
-  return `${dashHeading("My trips", "Your journeys in the making. Local plans, all in one place.", linkBtn("Plan a journey", "booking", "secondary"))}<div class="notice">These are planning requests saved in this browser. No reservations, payments or confirmed departures are connected.</div>${rs.length ? rs.map(tripCard).join("") : empty("Where will your first plan take you?", "Explore the collection and prepare a local enquiry to start shaping your next journey.", "Discover packages", "deals", "bag")}`;
+  return `${dashHeading("My trips", "Your journeys in the making. Your plans, all in one place.", linkBtn("Plan a journey", "booking", "secondary"))}${rs.length ? rs.map(tripCard).join("") : empty("Where will your first plan take you?", "Explore the collection and prepare a local enquiry to start shaping your next journey.", "Discover packages", "deals", "bag")}`;
 }
 function bookingStatus() {
-  return `${dashHeading("Your plans, at a glance.", "Follow the progress of your local planning requests.")}<div class="notice">Draft means saved locally. Enquiry Prepared means you’ve prepared a copy to share yourself. Neither status means a provider has received or approved your request.</div><div class="request-filters"><input type="search" id="request-search" placeholder="Search package, destination or reference…" aria-label="Search planning requests"><select id="request-status" aria-label="Filter request status"><option value="">All statuses</option><option>Draft</option><option>Enquiry Prepared</option><option>Cancelled</option></select></div><div id="request-list"></div>`;
+  return `${dashHeading("Your plans, at a glance.", "Review and organise your saved enquiries.")}<p class="workspace-help">Drafts are ready to edit. Prepared enquiries are ready to share.</p><div class="request-filters"><input type="search" id="request-search" placeholder="Search package, destination or reference…" aria-label="Search planning requests"><select id="request-status" aria-label="Filter request status"><option value="">All statuses</option><option>Draft</option><option>Enquiry Prepared</option><option>Cancelled</option></select></div><div id="request-list"></div>`;
 }
 function renderRequests() {
   const q = $("#request-search").value.toLowerCase(),
@@ -119,7 +119,7 @@ function renderRequests() {
     ? rs.map(tripCard).join("")
     : empty(
         "No requests here yet.",
-        "Save a local planning enquiry, or try changing your search and status filters.",
+        "Save an enquiry draft, or try changing your search and status filters.",
         "Prepare a journey",
         "booking",
         "clock",
@@ -144,7 +144,7 @@ function itineraries() {
           "deals",
           "map",
         )
-      : `<div class="notice">This is a planning itinerary, not a confirmed travel schedule. No hotels, transport or activities have been reserved.</div><div class="itinerary-picker"><label for="itinerary-select" class="eyebrow" style="margin:0">Your journey</label><select id="itinerary-select">${ids
+      : `<div class="itinerary-picker"><label for="itinerary-select" class="eyebrow" style="margin:0">Your journey</label><select id="itinerary-select">${ids
           .map((id) => {
             let x = PACKAGES.find((p) => p.id === id);
             return `<option value="${id}" ${id === p.id ? "selected" : ""}>${x.title}</option>`;
@@ -163,7 +163,7 @@ function fileTable(files, invoice) {
 }
 function documentPage(invoice = false) {
   const files = invoice ? sessionInvoices : sessionDocuments;
-  return `${dashHeading(invoice ? "Your invoices, together." : "The essentials, in one place.", invoice ? "Provider-issued billing documents, when supplied." : "Tickets, vouchers and travel documents for your journeys.")}<div class="notice">${invoice ? "No billing service is connected. This workspace does not issue invoices or confirm payments." : "No ticketing service is connected. This workspace does not issue tickets or validate travel documents."} You can open your own supplied file for this session; it stays on this device and is not verified.</div><div class="panel"><div class="panel-title"><h2>${invoice ? "Invoice library" : "Your travel documents"}</h2><label class="btn small" for="${invoice ? "invoice" : "document"}-import">${icon("file", 16)} Open supplied ${invoice ? "invoice" : "document"}</label><input type="file" hidden id="${invoice ? "invoice" : "document"}-import" accept="application/pdf,image/jpeg,image/png"></div>${files.length ? fileTable(files, invoice) : empty(invoice ? "No issued invoices here yet." : "No issued documents here yet.", invoice ? "Add your real provider-issued invoice when you receive it. Its number, trip reference, date, amount and payment status can be recorded from the document." : "Add provider-issued tickets or vouchers when you receive them. Record the type and related trip, then view or download the original file.", "", "", invoice ? "file" : "bag")}<p style="font-size:var(--type-support);margin-top:20px">PDF, JPG or PNG · up to 15 MB · session only · no upload or permanent storage</p></div><div class="panel" style="margin-top:25px"><h3 style="font-size:23px">${invoice ? "A clear view of your travel costs." : "A little preparation goes a long way."}</h3>${(invoice
+  return `${dashHeading(invoice ? "Your invoices, together." : "The essentials, in one place.", invoice ? "Provider-issued billing documents, when supplied." : "Tickets, vouchers and travel documents for your journeys.")}<div class="panel"><div class="panel-title"><h2>${invoice ? "Invoice library" : "Your travel documents"}</h2><label class="btn small" for="${invoice ? "invoice" : "document"}-import">${icon("file", 16)} Open supplied ${invoice ? "invoice" : "document"}</label><input type="file" hidden id="${invoice ? "invoice" : "document"}-import" accept="application/pdf,image/jpeg,image/png"></div>${files.length ? fileTable(files, invoice) : empty(invoice ? "No issued invoices here yet." : "No issued documents here yet.", invoice ? "Add your real provider-issued invoice when you receive it. Its number, trip reference, date, amount and payment status can be recorded from the document." : "Add provider-issued tickets or vouchers when you receive them. Record the type and related trip, then view or download the original file.", "", "", invoice ? "file" : "bag")}<p style="font-size:var(--type-support);margin-top:20px">PDF, JPG or PNG · up to 15 MB · session only · no upload or permanent storage</p></div><div class="panel" style="margin-top:25px"><h3 style="font-size:23px">${invoice ? "A clear view of your travel costs." : "A little preparation goes a long way."}</h3>${(invoice
     ? [
         [
           "Invoice reference",
@@ -217,14 +217,14 @@ function editFileMetadata(type, index) {
 
 function notifications() {
   const events = read("events");
-  return `${dashHeading("Little steps along the way.", "Real activity from your local planning workspace.")}<div class="panel"><div class="panel-title"><h2>Recent activity</h2>${events.length ? '<button class="btn outline small" id="clear-events">Clear history</button>' : ""}</div>${events.length ? events.map(eventRow).join("") : empty("Your next chapter starts here.", "When you save a package, update a plan or add an itinerary, your activity appears here.", "", "", "bell")}</div>`;
+  return `${dashHeading("Little steps along the way.", "Updates from your travel journal.")}<div class="panel"><div class="panel-title"><h2>Recent activity</h2>${events.length ? '<button class="btn outline small" id="clear-events">Clear history</button>' : ""}</div>${events.length ? events.map(eventRow).join("") : empty("Your next chapter starts here.", "When you save a package, update a plan or add an itinerary, your activity appears here.", "", "", "bell")}</div>`;
 }
 function profilePage() {
   const p = dashProfile();
-  return `${dashHeading("A little about you.", "Make your local workspace feel more like yours.")}<div class="dash-grid"><form class="form-card" id="profile-form"><h2>Your traveler profile</h2><label class="field">Display name<input name="name" value="${esc(p.name)}" required maxlength="80" autocomplete="nickname"></label><label class="field">Email for your prepared enquiries<input type="email" name="email" value="${esc(p.email)}" maxlength="150" autocomplete="email"></label><label class="field">Preferred contact method<select name="contact"><option ${p.contact === "Email" ? "selected" : ""}>Email</option><option ${p.contact === "Phone" ? "selected" : ""}>Phone</option><option ${p.contact === "No preference" ? "selected" : ""}>No preference</option></select></label><button type="submit" class="btn">Save profile ${icon("check", 17)}</button></form><aside class="panel" style="align-self:start"><div class="avatar" style="width:56px;height:56px;font-size:23px;margin-bottom:24px">${esc(p.name.charAt(0).toUpperCase())}</div><h3>Your space to plan.</h3><p style="margin-block:18px;font-size:var(--type-support)">This is a local guest profile. It is not a verified travel account and does not synchronise between devices.</p><div class="notice">Keep sensitive identity documents, passport numbers and payment details out of your local profile.</div></aside></div>`;
+  return `${dashHeading("A little about you.", "Make your travel journal feel more like yours.")}<div class="dash-grid"><form class="form-card" id="profile-form"><h2>Your traveler profile</h2><label class="field">Display name<input name="name" value="${esc(p.name)}" required maxlength="80" autocomplete="nickname"></label><label class="field">Email for your prepared enquiries<input type="email" name="email" value="${esc(p.email)}" maxlength="150" autocomplete="email"></label><label class="field">Preferred contact method<select name="contact"><option ${p.contact === "Email" ? "selected" : ""}>Email</option><option ${p.contact === "Phone" ? "selected" : ""}>Phone</option><option ${p.contact === "No preference" ? "selected" : ""}>No preference</option></select></label><button type="submit" class="btn">Save profile ${icon("check", 17)}</button></form><aside class="panel" style="align-self:start"><div class="avatar" style="width:56px;height:56px;font-size:23px;margin-bottom:24px">${esc(p.name.charAt(0).toUpperCase())}</div><h3>Your space to plan.</h3><p style="margin-block:18px;font-size:var(--type-support)">Your profile and travel preferences are saved on this device. You can export or clear them in Settings.</p><div class="notice">Keep sensitive identity documents, passport numbers and payment details out of your local profile.</div></aside></div>`;
 }
 function settings() {
-  return `${dashHeading("Just the way you like it.", "A few preferences for a more comfortable journey.")}<section class="panel"><div class="panel-title"><h2>Your workspace</h2><span class="tag">Guest · This browser</span></div><div class="settings-row"><div><h3>Appearance</h3><p>Choose a lighter page or a quieter dark surface.</p></div><button class="btn outline small theme-toggle" aria-label="Toggle color theme">${icon("moon", 17)} Switch theme</button></div><div class="settings-row"><div><h3>Reading direction</h3><p>Mirror the interface for right-to-left reading.</p></div><button class="btn outline small direction-toggle">${document.documentElement.dir === "rtl" ? "LTR" : "RTL"}</button></div><div class="settings-row"><div><h3>Local activity notifications</h3><p>Keep a history of your planning changes.</p></div><label class="check-line" style="margin:0"><input type="checkbox" id="notifications-preference" ${read("notifications-enabled", true) ? "checked" : ""}> Enable activity history</label></div><div class="settings-row"><div><h3>Export your plans</h3><p>Download favourites, requests, profile, itineraries and preferences as JSON.</p></div><button class="btn outline small" id="export-data">${icon("download", 17)} Export my data</button></div><div class="settings-row"><div><h3>Clear local workspace</h3><p>Remove your planning records from this browser. Export a copy first if you need one.</p></div><button class="btn outline small" id="reset-data">Clear local data</button></div></section><div class="notice" style="margin-top:25px">Your supplied document and invoice files are held for the current session only and are not included in exports.</div>`;
+  return `${dashHeading("Just the way you like it.", "A few preferences for a more comfortable journey.")}<section class="panel"><div class="panel-title"><h2>Your workspace</h2><span class="tag">Saved on this device</span></div><div class="settings-row"><div><h3>Appearance</h3><p>Choose a lighter page or a quieter dark surface.</p></div><button class="btn outline small theme-toggle" aria-label="Toggle color theme">${icon("moon", 17)} Switch theme</button></div><div class="settings-row"><div><h3>Reading direction</h3><p>Mirror the interface for right-to-left reading.</p></div><button class="btn outline small direction-toggle">${document.documentElement.dir === "rtl" ? "LTR" : "RTL"}</button></div><div class="settings-row"><div><h3>Local activity notifications</h3><p>Keep a history of your planning changes.</p></div><label class="check-line" style="margin:0"><input type="checkbox" id="notifications-preference" ${read("notifications-enabled", true) ? "checked" : ""}> Enable activity history</label></div><div class="settings-row"><div><h3>Export your plans</h3><p>Download favourites, requests, profile, itineraries and preferences as JSON.</p></div><button class="btn outline small" id="export-data">${icon("download", 17)} Export my data</button></div><div class="settings-row"><div><h3>Clear local workspace</h3><p>Remove your planning records from this browser. Export a copy first if you need one.</p></div><button class="btn outline small" id="reset-data">Clear local data</button></div></section><div class="notice" style="margin-top:25px">Your supplied document and invoice files are held for the current session only and are not included in exports.</div>`;
 }
 function refreshDashboard() {
   const hash = location.hash.slice(1);
@@ -275,7 +275,7 @@ function bindDashboardView() {
       $(".dashboard-topbar .avatar").textContent = p.name
         .charAt(0)
         .toUpperCase();
-      toast("Your local profile is saved.");
+      toast("Your profile is saved on this device.");
     }
   });
   $("#profile-form input[name=name]")?.addEventListener("input", (e) =>
@@ -315,7 +315,7 @@ function requestModal(id) {
   window.viewingRequest = id;
   const p = PACKAGES.find((p) => p.id === r.packageId);
   showModal(
-    `<span class="eyebrow">${esc(r.id)}</span><h3>${p.title}</h3><p style="margin-block:15px;font-size:var(--type-support)">${esc(r.status)} · Local planning request</p>${[
+    `<span class="eyebrow">${esc(r.id)}</span><h3>${p.title}</h3><p style="margin-block:15px;font-size:var(--type-support)">${esc(r.status)} · Enquiry draft</p>${[
       ["Destination", r.destination],
       ["Departure", displayDate(r.date)],
       ["Travelers", r.adults + " adults · " + r.children + " children"],
@@ -397,11 +397,10 @@ document.addEventListener("click", (e) => {
   if (el.id === "close-dash-drawer") closeDashDrawer();
   if (el.closest(".dashboard-nav") && $(".dashboard-sidebar.mobile-open"))
     closeDashDrawer();
-  if (el.id === "guest-logout") {
-    sessionStorage.removeItem("atlas-guest");
+  if (el.id === "workspace-close") {
     sessionDocuments.forEach((f) => URL.revokeObjectURL(f.url));
     sessionInvoices.forEach((f) => URL.revokeObjectURL(f.url));
-    location.href = url("login", "?guest=left");
+    location.href = home();
   }
   if (el.dataset.requestView) requestModal(el.dataset.requestView);
   if (el.dataset.viewItinerary) {
@@ -432,8 +431,8 @@ document.addEventListener("click", (e) => {
       refreshDashboard();
       toast(
         r.status === "Cancelled"
-          ? "Local draft cancelled. No operator reservation was changed."
-          : "Enquiry prepared. Share it with your provider yourself.",
+          ? "Enquiry draft cancelled."
+          : "Enquiry prepared. It is ready to share.",
       );
     }
   }
@@ -490,7 +489,7 @@ document.addEventListener("click", (e) => {
   if (el.id === "export-data") {
     const data = {
       exported: new Date().toISOString(),
-      mode: "Local guest planning workspace",
+      mode: "Travel journal stored on this device",
       favorites: favoriteIds(),
       requests: read("requests"),
       itineraries: read("itineraries"),

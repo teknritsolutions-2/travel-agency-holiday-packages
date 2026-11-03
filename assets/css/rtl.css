@@ -60,8 +60,7 @@
 [dir="rtl"] :is(.price strong, .price em) {
   display: inline-block;
 }
-[dir="rtl"] .gallery-controls .icon-btn svg,
-[dir="rtl"] .back-home svg {
+[dir="rtl"] .gallery-controls .icon-btn svg {
   transform: rotate(180deg);
 }
 [dir="rtl"] .journal-closing :is(h2, p) {
