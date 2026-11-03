@@ -1088,8 +1088,9 @@ function setPlanningStage(i) {
 }
 function setupBackTop() {
   const button = $(".back-top"),
-    footer = $(".site-footer");
-  if (!button || !footer) return;
+    footer = $(".site-footer"),
+    divider = footer?.querySelector(".footer-bottom");
+  if (!button || !footer || !divider) return;
   let scheduled = false;
   function update() {
     scheduled = false;
@@ -1103,31 +1104,31 @@ function setupBackTop() {
         ),
       );
     if (button.hidden) return;
-    const footerTop = footer.getBoundingClientRect().top,
-      footerOffset = scrollY + footerTop;
-    if (footerTop < innerHeight - 75) {
+    const height = button.offsetHeight,
+      dockTop = divider.getBoundingClientRect().top - height - 16;
+    if (dockTop <= innerHeight - height - 24) {
       button.classList.add("docked");
-      button.style.top = footerOffset + 16 + "px";
+      button.style.top = scrollY + dockTop + "px";
       button.style.bottom = "";
     } else {
       button.classList.remove("docked");
       button.style.top = "";
-      let clearance = 24;
       const rect = button.getBoundingClientRect();
-      for (const target of $$(
-        "form button[type=submit],.closing .btn,.about-invitation .btn,.catalog-help .btn",
-      )) {
-        const r = target.getBoundingClientRect();
-        if (
-          r.width &&
-          r.left < rect.right &&
-          r.right > rect.left &&
-          r.bottom > innerHeight - 90 &&
-          r.top < innerHeight - 15
-        )
-          clearance = Math.max(clearance, innerHeight - r.top + 14);
+      const targets = $$(
+        "form button[type=submit],.closing .btn,.about-invitation .btn,.catalog-help .btn,.footer-links a",
+      )
+        .map((target) => target.getBoundingClientRect())
+        .filter((r) => r.width && r.left < rect.right && r.right > rect.left);
+      let top = innerHeight - height - 24;
+      for (let pass = 0; pass < targets.length; pass++) {
+        const previous = top;
+        for (const r of targets) {
+          if (r.bottom > top - 10 && r.top < top + height + 10)
+            top = Math.min(top, r.top - height - 14);
+        }
+        if (top === previous) break;
       }
-      button.style.bottom = clearance + "px";
+      button.style.bottom = innerHeight - top - height + "px";
     }
   }
   function schedule() {

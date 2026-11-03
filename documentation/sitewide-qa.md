@@ -49,3 +49,7 @@ The owner requested temporary contact numbers. `assets/js/site-config.js` holds 
 **This is not yet ready to accept live commercial bookings or create real accounts.** No live contact-delivery, account, payment, inventory or ticketing service has been supplied. Contact currently reviews/copies/downloads a message; enquiries save drafts on the current device; auth cannot report a successful sign-in or account creation. These are tested behaviors, not a claim of service integration.
 
 Live commercial operation still requires the agency’s genuine identity/contact information, approved package pricing/terms and privacy text, plus actual account and enquiry services. Replacing those dependencies with random data would not make the site production-ready.
+
+## Back-to-Top position follow-up
+
+The control now continues down through the footer and docks 16px above its lower divider, instead of stopping at the upper footer edge. Reserved space was moved toward the divider, and collision handling keeps footer links and nearby actions clear. Targeted browser checks passed on long and short pages at 320, 390, 820 and 1440px in light/dark modes and LTR/RTL (32 combinations), including intermediate scrolling, the final docking gap and returning to the top. Desktop and phone viewport captures were inspected.

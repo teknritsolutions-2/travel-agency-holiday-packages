@@ -23,7 +23,7 @@ Open `http://localhost:4173`. No dependency installation or build is needed. Kee
 
 ## Living Atlas 2.0 design refinement
 
-Ocean Ink actions in light mode, Coastal Blue actions in dark mode, white action labels and pale blue details, shared readable type tokens, a painted Atlas Explorer, an interactive three-stage planning feature, Beyond the Map editorial About, independent auth compositions, and a floating Back-to-Top control that docks at the footer. Package records and existing browser storage keys are preserved.
+Ocean Ink actions in light mode, Coastal Blue actions in dark mode, white action labels and pale blue details, shared readable type tokens, a painted Atlas Explorer, an interactive three-stage planning feature, Beyond the Map editorial About, independent auth compositions, and a floating Back-to-Top control that docks just above the lower footer divider. Package records and existing browser storage keys are preserved.
 
 See `documentation/sitewide-qa.md` for the current content and responsive verification, and `documentation/theme-brand-qa.md` for theme/identity details.
 
