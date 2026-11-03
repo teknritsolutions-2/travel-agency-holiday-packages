@@ -176,7 +176,6 @@ function footer() {
         ["About", url("about")],
         ["Privacy", url("privacy")],
         ["Terms", url("terms")],
-        ["Image Credits", BASE + "documentation/image-credits.md"],
       ],
     ],
   ];
