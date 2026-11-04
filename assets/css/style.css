@@ -3142,17 +3142,6 @@ td .btn {
   color: var(--muted);
   font-size: var(--type-meta);
 }
-@media (min-width: 681px) and (max-width: 900px) {
-  .home-packages .package-card:last-child {
-    display: flex;
-  }
-  .package-grid:has(> .package-card:nth-child(3):last-child)
-    > .package-card:last-child {
-    grid-column: 1/-1;
-    width: calc(50% - 12px);
-    justify-self: center;
-  }
-}
 @media (max-width: 1150px) {
   .trust-strip {
     font-size: var(--type-meta);
@@ -5795,4 +5784,27 @@ input::placeholder,
 textarea::placeholder {
   color: var(--muted);
   opacity: 1;
+}
+
+/* Three-card collections use complete rows throughout the tablet range. */
+@media (min-width: 681px) and (max-width: 1240px) {
+  .package-grid:has(> :nth-child(3):last-child),
+  .info-grid,
+  .postcard-grid,
+  .philosophy-notes,
+  .international-mosaic {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .package-grid:has(> :nth-child(3):last-child) > * {
+    grid-column: auto;
+    width: auto;
+    justify-self: stretch;
+  }
+  .home-packages .package-card:last-child {
+    display: flex;
+  }
+  .postcard-grid > .postcard {
+    transform: none;
+    margin-top: 0;
+  }
 }

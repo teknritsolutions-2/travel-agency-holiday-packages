@@ -63,3 +63,9 @@ At the owner’s request, Google and Apple controls with their proper logos were
 The public mobile/tablet navigation drawer now opens against the right edge in both text directions. Focus trapping, Escape/backdrop closing, focus return and background isolation remain intact. The photographic home hero label no longer reserves a decorative-line offset, so its text aligns with the heading, description and actions.
 
 Targeted Chromium checks covered 24 combinations at 320, 390, 768, 820, 1024 and 1440px in light/dark and LTR/RTL, including both authentication pages. A separate 126-view scan covered all 21 pages at phone, tablet and desktop widths in both themes, checking page overflow and content bounds while allowing intentional swipe carousels. Phone and tablet captures were inspected.
+
+## Three-card tablet layouts
+
+At 681–1240px, collections containing exactly three package or journal cards now stack one per row. The same layout applies to planning-information cards, Home 2 postcards, About philosophy notes and the international destination trio. The former centered third-package rule was removed, and tablet postcards no longer rotate or stagger. Dynamic collections, including three saved dashboard packages, use the same shared rule.
+
+Chromium checks passed on all 21 pages at 390, 680, 681, 768, 820, 1024, 1180, 1240, 1241 and 1440px in both themes (420 views). Additional light/dark and LTR/RTL checks covered six affected routes at four tablet widths, including a populated dashboard (96 views). Checks verified equal card widths, sequential rows, visibility and page overflow; the 820px package-section capture was visually inspected.
