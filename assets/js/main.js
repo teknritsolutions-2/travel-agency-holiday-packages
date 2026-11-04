@@ -1,6 +1,6 @@
 "use strict";
 const PAGE = document.body.dataset.page,
-  BASE = PAGE === "index" ? "" : "../",
+  BASE = document.body.dataset.base ?? (PAGE === "index" ? "" : "../"),
   P = BASE + "pages/",
   A = BASE + "assets/";
 const DATA = window.ATLAS_DATA,

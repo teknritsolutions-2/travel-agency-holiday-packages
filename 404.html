@@ -1,24 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>A small detour · Waylark</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script>
-      const root = location.hostname.endsWith(".github.io")
+      const siteBase = document.createElement("base");
+      siteBase.href = location.hostname.endsWith(".github.io")
         ? "/travel-agency-holiday-packages/"
         : "/";
-      location.replace(root + "pages/404.html");
+      document.head.append(siteBase);
+      for (const file of ["fonts.css", "style.css", "dark-mode.css", "rtl.css"]) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "assets/css/" + file;
+        document.head.append(link);
+      }
+      const favicon = document.createElement("link");
+      favicon.rel = "icon";
+      favicon.href = "assets/images/favicon.svg";
+      document.head.append(favicon);
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".skip").href =
+          location.pathname + location.search + "#main";
+        for (const file of ["site-config.js", "travel-data.js", "main.js", "select-controls.js"]) {
+          const script = document.createElement("script");
+          script.async = false;
+          script.src = "assets/js/" + file;
+          document.body.append(script);
+        }
+      });
+    </script>
+    <meta
+      name="description"
+      content="Explore Waylark’s thoughtfully curated domestic and international holidays. Save your favourites and shape your next journey in a personal traveler workspace."
+    />
+    <meta property="og:site_name" content="Waylark" />
+    <meta
+      property="og:title"
+      content="Waylark — Journeys beyond the familiar"
+    />
+    <meta
+      property="og:description"
+      content="A travel journal of extraordinary places, thoughtful holidays and your next great journey."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://teknritsolutions-2.github.io/travel-agency-holiday-packages/assets/images/hero-dolomites.webp"
+    />
+    <meta name="theme-color" content="#203B57" />
+    <title>A little off the beaten path · Waylark</title>
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("atlas-theme") || "light";
+        document.documentElement.dir =
+          localStorage.getItem("atlas-direction") || "ltr";
+      } catch (e) {}
     </script>
   </head>
-  <body>
-    <main>
-      <h1>A small detour.</h1>
-      <p>
-        This page isn’t in our atlas.
-        <a href="https://teknritsolutions-2.github.io/travel-agency-holiday-packages/pages/404.html">Continue to Waylark</a>.
-      </p>
-    </main>
+  <body data-page="404" data-base="">
+    <a class="skip" href="#main">Skip to content</a>
+    <div id="app"></div>
+    <noscript
+      ><main>
+        <h1>A little off the beaten path</h1>
+        <p>
+          Please enable JavaScript to explore packages and use your traveler
+          workspace.
+        </p>
+      </main></noscript
+    >
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal">
+      <button class="icon-btn modal-close" aria-label="Close dialog">×</button>
+      <div id="modal-body"></div>
+    </dialog>
   </body>
 </html>
