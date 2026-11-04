@@ -93,3 +93,9 @@ Checks passed for 88 page/theme/direction/viewport combinations from 320 to 1440
 The public navbar is fixed to the viewport at widths up to 1240px. Matching space is reserved above main content (75px on phones, 81px on tablets) so the initial page content stays clear. The dashboard topbar now has sticky positioning at these widths; it previously scrolled away with the page. Desktop positioning and authentication layouts are unchanged.
 
 Chromium and WebKit checks passed across all 19 public/dashboard pages at 390, 820, 1180 and 1440px in both themes (304 views). Checks covered initial content clearance, navbar position at intermediate and final scroll points, menus opened from the page bottom, Escape closing, scroll-position preservation and overflow. Footer-position captures confirmed the navbar remains visible.
+
+## Phone image-and-copy stacking
+
+At widths up to 680px, the home Ladakh editorial uses one full-width image row above its copy. A later desktop grid declaration had overridden the earlier phone rule. Home 2 and About hero photography now precedes their copy on phones, and the dashboard welcome feature shows its photograph above the text instead of squeezing or hiding it. Existing correctly stacked style features, workspace features, day panels, trip cards and atlas sections retain their image-first layouts. Authentication photo backgrounds and photographic overlay banners retain their intended treatment.
+
+Chromium and WebKit checks passed for all 21 pages at 320, 390, 430 and 680px in both themes and directions (672 views). They verified 288 image/copy pairs for adequate image width/height and image-before-copy order, and checked page overflow and script errors. The corrected Ladakh section was visually reviewed. All changes are limited to phone media rules.

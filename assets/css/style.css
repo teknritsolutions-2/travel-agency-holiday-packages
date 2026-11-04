@@ -5886,6 +5886,39 @@ textarea::placeholder {
     z-index: 100;
   }
 }
+
+/* Give paired photography and copy full-width rows on phones. */
+@media (max-width: 680px) {
+  .editorial-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .editorial-grid > * {
+    min-width: 0;
+  }
+  .editorial-grid .brush-photo {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+  .journal-hero > .journal-photo,
+  .about-cover > .about-cover-photo {
+    grid-row: 1;
+  }
+  .dash-welcome {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dash-welcome > img {
+    display: block;
+    order: -1;
+    width: 100%;
+    height: clamp(180px, 55vw, 280px);
+  }
+  .dash-welcome > div {
+    min-width: 0;
+    width: 100%;
+  }
+}
 @media (max-width: 680px) {
   .site-header + #main {
     padding-top: 75px;
