@@ -5825,3 +5825,61 @@ textarea::placeholder {
     margin-top: 0;
   }
 }
+
+/* Compact access pages place the form over an inset, torn-edge photograph. */
+@media (max-width: 1240px) {
+  .auth-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 100svh;
+    padding: 56px 40px;
+  }
+  .auth-shell .auth-utilities,
+  .auth-shell .auth-story {
+    display: none;
+  }
+  .auth-shell .auth-photo {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+    height: auto;
+    padding: 0;
+    z-index: -1;
+  }
+  .auth-shell .auth-photo-mask {
+    inset: 20px;
+    mask: url("../images/horizon-tall.svg") center/100% 100% no-repeat;
+    -webkit-mask: url("../images/horizon-tall.svg") center/100% 100% no-repeat;
+  }
+  .auth-shell .auth-photo-mask:after {
+    background: linear-gradient(135deg, #0e243322, #0e243355);
+  }
+  .auth-shell .auth-form-wrap {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .auth-shell .auth-form {
+    max-width: 520px;
+    padding: 36px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+}
+@media (max-width: 680px) {
+  .auth-shell {
+    padding: 44px 28px;
+  }
+  .auth-shell .auth-photo-mask {
+    inset: 9px;
+    mask-size: 104% 104%;
+    -webkit-mask-size: 104% 104%;
+  }
+  .auth-shell .auth-form {
+    padding: 29px 19px;
+  }
+}

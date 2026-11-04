@@ -81,3 +81,9 @@ Twenty replacement assets match their respective original images' pixel dimensio
 Package-card rows share tracks for their photographs, metadata, titles, descriptions and footers. Wrapped titles reserve the same height across the row, keeping descriptions, dividers, prices and trip links aligned without truncating text. The conflicting fixed footer margin was removed; browsers without subgrid retain the flex layout with a bottom-aligned footer. Obsolete home-card visibility overrides were removed so all three cards use the shared layout.
 
 Chromium measurements passed across seven public/dashboard routes at eight widths from 320 to 1440px in both themes and directions: 224 views and 1,192 card rows. Checks compared card bottoms and the top positions of images, metadata, titles, descriptions, dividers, price labels/amounts and trip links, and checked overflow and script errors. The tablet Maldives pair from the supplied screenshot was visually reviewed.
+
+## Tablet and phone authentication backgrounds
+
+At widths up to 1240px, Login and Sign Up use a single centered form over their original photograph. The photograph remains inset from all four page edges with a torn mask; phone form spacing leaves the photograph visible around the card. The former photo-panel story and authentication theme/direction controls are hidden at these widths. The form surface remains opaque and theme-aware, and the background grows with the form for longer signup pages.
+
+Checks passed for 88 page/theme/direction/viewport combinations from 320 to 1440px, covering hidden controls, background insets, form bounds, full-page scrolling, provider feedback and password visibility. Desktop photo, story, form and utility measurements at 1280 and 1440px exactly matched the pre-change baseline. Phone and tablet captures were visually reviewed in both themes.
