@@ -18,6 +18,7 @@ Open `http://localhost:4173`. No dependency installation or build is needed. Kee
 - Twenty illustrative packages across ten destinations, powered by `assets/js/travel-data.js`.
 - Destination selection and swipe navigation, budget/style/duration/destination filters, sorting, persistent favorites, package-specific day routes and enquiry prefill.
 - Sticky navigation, keyboard/click/hover dropdown, focus-managed responsive drawer, dark theme, RTL, reduced-motion support and matching W favicon.
+- Shared form dropdowns with 16px options, 44px targets, keyboard/type-ahead navigation, viewport-aware menus and native form values/validation (`assets/js/select-controls.js`).
 - Separate traveler-journal login/signup compositions, password visibility and validation, equal theme/direction controls, Google/Apple sign-in buttons, and concise failure feedback while account services are unavailable.
 - Dashboard overview, trips, local status tracker, itinerary notes/expansion/print/download, favorites, session document/invoice viewing and downloading, actual local activity, editable profile, export/reset/settings and workspace exit.
 
