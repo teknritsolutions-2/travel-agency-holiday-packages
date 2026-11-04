@@ -1692,6 +1692,7 @@ dialog::backdrop {
 .trip-card .trip-copy {
   flex: 1;
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 .trip-card h3 {
   font-size: 23px;
@@ -3678,7 +3679,7 @@ td .btn {
   --heading: #203b57;
   --dark: #151b24;
   --line: #dfe3e7;
-  --muted: #66717c;
+  --muted: #63707b;
   --text: #222831;
   --mist: #f1f3f5;
   --surface: #fff;
@@ -5934,6 +5935,33 @@ select optgroup {
   text-transform: none;
   letter-spacing: normal;
 }
+
+.catalog-layout > *,
+.catalog-top > *,
+.search-panel > label,
+.filter-panel > .field {
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .catalog-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .catalog-top {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 420px) {
+  .search-panel,
+  .filter-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .search-panel > label,
+  .search-panel > label:first-child,
+  .search-panel > label:nth-child(3) {
+    padding-inline: 4px;
+    border-inline-end: 0;
+  }
+}
 .select-native {
   position: absolute !important;
   width: 1px !important;
@@ -6089,5 +6117,43 @@ select optgroup {
   }
   .auth-shell .auth-form {
     padding: 29px 19px;
+  }
+}
+
+.print-notes {
+  display: none;
+}
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    color-scheme: light;
+    --paper: #fff;
+    --surface: #fff;
+    --mist: #f1f3f5;
+    --text: #222831;
+    --heading: #203b57;
+    --muted: #63707b;
+    --line: #dfe3e7;
+    --action: #203b57;
+  }
+  button,
+  .back-top,
+  #itinerary-notes {
+    display: none !important;
+  }
+  .site-header + #main,
+  .dashboard-content {
+    padding-top: 0;
+  }
+  .panel {
+    background: #fff;
+    box-shadow: none;
+  }
+  .print-notes {
+    display: block;
+    color: var(--text);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    margin-block: 8px;
   }
 }

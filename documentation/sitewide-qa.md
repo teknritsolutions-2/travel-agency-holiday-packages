@@ -1,6 +1,6 @@
 # Waylark — content cleanup and sitewide QA
 
-Verified 3 November 2026. This report supersedes earlier UI and guest-access descriptions.
+Initial audit: 3 November 2026. The latest release crosscheck is recorded in [release-check.md](release-check.md), dated 4 November 2026. Sections below retain the implementation and follow-up history.
 
 ## Content and interface changes
 

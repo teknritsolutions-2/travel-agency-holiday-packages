@@ -79,7 +79,7 @@ function overview() {
     )
     .join(
       "",
-    )}</div><div class="dash-welcome"><div><span class="eyebrow">Your next chapter</span><h2>Good things begin<br>with a little curiosity.</h2><p>Build your wish list, shape a route, and keep your plans close. Your next story is waiting to happen.</p>${linkBtn("Find your next escape", "destinations", "secondary small")}</div>${img("kashmir.webp", "Kashmir alpine lake")}</div><div class="dash-grid"><section class="panel"><div class="panel-title"><h2>Your planning compass</h2><a href="#booking-status">View requests ${icon("arrow", 14)}</a></div><p style="font-size:var(--type-support)">Your saved enquiries at a glance.</p>${[
+    )}</div><div class="dash-welcome"><div><span class="eyebrow">Your next chapter</span><h2>Good things begin<br>with a little curiosity.</h2><p>Build your wish list, shape a route, and keep your plans close. Your next story is waiting to happen.</p>${linkBtn("Find your next escape", "destinations", "secondary small")}</div>${img("atlas-kashmir.webp", "The mountain landscape of Kashmir")}</div><div class="dash-grid"><section class="panel"><div class="panel-title"><h2>Your planning compass</h2><a href="#booking-status">View requests ${icon("arrow", 14)}</a></div><p style="font-size:var(--type-support)">Your saved enquiries at a glance.</p>${[
     ["Draft", reqs.filter((r) => r.status === "Draft").length],
     [
       "Enquiry Prepared",
@@ -350,6 +350,20 @@ function itineraryText(p) {
     (read("itinerary-notes", {})[p.id] || "None")
   );
 }
+function prepareItineraryPrint() {
+  const notes = $("#itinerary-notes");
+  if (!notes) return;
+  $$(".itinerary details").forEach((day) => (day.open = true));
+  let printed = $(".print-notes");
+  if (!printed) {
+    printed = document.createElement("p");
+    printed.className = "print-notes";
+    notes.after(printed);
+  }
+  printed.textContent = notes.value || "No planning notes added.";
+}
+window.addEventListener("beforeprint", prepareItineraryPrint);
+
 function openDashDrawer() {
   const sb = $(".dashboard-sidebar");
   drawerReturnFocus = document.activeElement;
@@ -459,7 +473,7 @@ document.addEventListener("click", (e) => {
     download("planning-itinerary-" + p.id + ".txt", itineraryText(p));
   }
   if (el.id === "print-itinerary") {
-    $$(".itinerary details").forEach((d) => (d.open = true));
+    prepareItineraryPrint();
     window.print();
   }
   if (el.dataset.fileMetadata !== undefined)
