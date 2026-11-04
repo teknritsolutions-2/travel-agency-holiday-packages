@@ -5870,6 +5870,27 @@ textarea::placeholder {
     box-shadow: var(--shadow);
   }
 }
+
+/* Keep compact navigation reachable throughout page scrolling. */
+@media (max-width: 1240px) {
+  .site-header {
+    position: fixed;
+    inset-inline: 0;
+  }
+  .site-header + #main {
+    padding-top: 81px;
+  }
+  .dashboard-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
+@media (max-width: 680px) {
+  .site-header + #main {
+    padding-top: 75px;
+  }
+}
 @media (max-width: 680px) {
   .auth-shell {
     padding: 44px 28px;

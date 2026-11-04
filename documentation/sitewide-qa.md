@@ -87,3 +87,9 @@ Chromium measurements passed across seven public/dashboard routes at eight width
 At widths up to 1240px, Login and Sign Up use a single centered form over their original photograph. The photograph remains inset from all four page edges with a torn mask; phone form spacing leaves the photograph visible around the card. The former photo-panel story and authentication theme/direction controls are hidden at these widths. The form surface remains opaque and theme-aware, and the background grows with the form for longer signup pages.
 
 Checks passed for 88 page/theme/direction/viewport combinations from 320 to 1440px, covering hidden controls, background insets, form bounds, full-page scrolling, provider feedback and password visibility. Desktop photo, story, form and utility measurements at 1280 and 1440px exactly matched the pre-change baseline. Phone and tablet captures were visually reviewed in both themes.
+
+## Compact navigation persistence
+
+The public navbar is fixed to the viewport at widths up to 1240px. Matching space is reserved above main content (75px on phones, 81px on tablets) so the initial page content stays clear. The dashboard topbar now has sticky positioning at these widths; it previously scrolled away with the page. Desktop positioning and authentication layouts are unchanged.
+
+Chromium and WebKit checks passed across all 19 public/dashboard pages at 390, 820, 1180 and 1440px in both themes (304 views). Checks covered initial content clearance, navbar position at intermediate and final scroll points, menus opened from the page bottom, Escape closing, scroll-position preservation and overflow. Footer-position captures confirmed the navbar remains visible.
