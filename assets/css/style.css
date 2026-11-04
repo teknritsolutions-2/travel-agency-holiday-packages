@@ -1324,6 +1324,10 @@ dialog::backdrop {
 .dest-mosaic .getaway h3 {
   font-size: 33px;
 }
+.dest-mosaic .eyebrow:before {
+  background: currentColor;
+  flex-shrink: 0;
+}
 .search-input {
   max-width: 450px;
   position: relative;
