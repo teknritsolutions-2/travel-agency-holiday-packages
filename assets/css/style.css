@@ -458,6 +458,7 @@ p {
 }
 .package-photo {
   height: 245px;
+  flex-shrink: 0;
   position: relative;
   overflow: hidden;
 }
@@ -515,6 +516,9 @@ p {
   line-height: 1.22;
   margin-bottom: 13px;
 }
+.package-info > p {
+  margin-bottom: 20px;
+}
 .package-bottom {
   display: flex;
   justify-content: space-between;
@@ -523,7 +527,6 @@ p {
   margin-top: auto;
   padding-top: 21px;
   border-top: 1px solid var(--line);
-  margin-top: 20px;
 }
 .price strong {
   font-size: 22px;
@@ -2062,9 +2065,6 @@ td .btn {
   .package-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .home-packages .package-card:last-child {
-    display: none;
-  }
   .editorial-grid {
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -2414,9 +2414,6 @@ td .btn {
   .catalog-grid {
     grid-template-columns: 1fr;
     gap: 23px;
-  }
-  .home-packages .package-card:last-child {
-    display: flex;
   }
   .package-photo {
     height: 250px;
@@ -5804,11 +5801,27 @@ textarea::placeholder {
     width: auto;
     justify-self: stretch;
   }
-  .home-packages .package-card:last-child {
-    display: flex;
-  }
   .postcard-grid > .postcard {
     transform: none;
+    margin-top: 0;
+  }
+}
+
+/* Share content tracks across each card row, including wrapped titles. */
+@supports (grid-template-rows: subgrid) {
+  .package-grid > .package-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    row-gap: 0;
+  }
+  .package-card > .package-info {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    row-gap: 0;
+  }
+  .package-info > .package-bottom {
     margin-top: 0;
   }
 }
