@@ -248,7 +248,7 @@ p {
 .drawer {
   position: fixed;
   inset-block: 0;
-  inset-inline-start: 0;
+  right: 0;
   width: min(360px, 88vw);
   background: var(--paper);
   z-index: 200;
@@ -328,6 +328,9 @@ p {
 .hero .eyebrow {
   color: #fff;
   font-size: var(--type-meta);
+}
+.hero .eyebrow:before {
+  display: none;
 }
 .hero-note {
   position: absolute;
@@ -4675,6 +4678,56 @@ body {
   font-size: var(--type-support);
   margin-block: 15px 24px;
   line-height: 1.65;
+}
+.social-signin {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.provider-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--heading);
+  background: var(--surface);
+  font-size: var(--type-ui);
+  font-weight: 500;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.provider-btn:hover {
+  background: var(--mist);
+  border-color: var(--action);
+}
+.provider-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.auth-form > .provider-message {
+  margin-block: 12px 0;
+  font-size: var(--type-meta);
+  color: var(--heading);
+}
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-block: 24px;
+  color: var(--muted);
+  font-size: var(--type-meta);
+}
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--line);
 }
 .auth-form .field {
   margin-bottom: 17px;

@@ -18,7 +18,7 @@ Open `http://localhost:4173`. No dependency installation or build is needed. Kee
 - Twenty illustrative packages across ten destinations, powered by `assets/js/travel-data.js`.
 - Destination selection and swipe navigation, budget/style/duration/destination filters, sorting, persistent favorites, package-specific day routes and enquiry prefill.
 - Sticky navigation, keyboard/click/hover dropdown, focus-managed responsive drawer, dark theme, RTL, reduced-motion support and matching W favicon.
-- Separate traveler-journal login/signup compositions, password visibility and validation, equal theme/direction controls, and concise failure feedback while account services are unavailable.
+- Separate traveler-journal login/signup compositions, password visibility and validation, equal theme/direction controls, Google/Apple sign-in buttons, and concise failure feedback while account services are unavailable.
 - Dashboard overview, trips, local status tracker, itinerary notes/expansion/print/download, favorites, session document/invoice viewing and downloading, actual local activity, editable profile, export/reset/settings and workspace exit.
 
 ## Living Atlas 2.0 design refinement
@@ -29,7 +29,7 @@ See `documentation/sitewide-qa.md` for the current content and responsive verifi
 
 ## Frontend boundaries
 
-This deliverable has **no authentication, payment, booking, email or ticketing backend**. Login and signup do not create accounts or store passwords. The traveler journal is accessible from Dashboard; guest buttons and inactive social provider controls have been removed. Enquiries are saved as **local Drafts**; marking **Enquiry Prepared** means the traveler has prepared details to share independently. Nothing is sent automatically. No booking is confirmed or paid and no official ticket or invoice is generated.
+This deliverable has **no authentication, payment, booking, email or ticketing backend**. Login and signup do not create accounts or store passwords. The traveler journal is accessible from Dashboard; guest buttons remain removed. Google/Apple controls are visible and report unavailable service on interaction until OAuth is configured. Enquiries are saved as **local Drafts**; marking **Enquiry Prepared** means the traveler has prepared details to share independently. Nothing is sent automatically. No booking is confirmed or paid and no official ticket or invoice is generated.
 
 User-supplied PDF/JPG/PNG files are opened with session-only browser object URLs. Files are not uploaded, retained across reloads, included in exports, or verified. Invoice amounts and payment status are never inferred.
 

@@ -53,3 +53,13 @@ Live commercial operation still requires the agency’s genuine identity/contact
 ## Back-to-Top position follow-up
 
 The control now continues down through the footer and docks 16px above its lower divider, instead of stopping at the upper footer edge. Reserved space was moved toward the divider, and collision handling keeps footer links and nearby actions clear. Targeted browser checks passed on long and short pages at 320, 390, 820 and 1440px in light/dark modes and LTR/RTL (32 combinations), including intermediate scrolling, the final docking gap and returning to the top. Desktop and phone viewport captures were inspected.
+
+## Social sign-in follow-up
+
+At the owner’s request, Google and Apple controls with their proper logos were restored on Login and Sign Up. They are equal-size buttons with theme-aware surfaces and accessible names. No guest entry, auth back link or introductory service notice was restored. Provider clicks give concise, truthful unavailable-service feedback; OAuth is still unconfigured. Responsive, theme and RTL checks covered both pages at 320, 390, 820 and 1440px.
+
+## Navigation and hero alignment follow-up
+
+The public mobile/tablet navigation drawer now opens against the right edge in both text directions. Focus trapping, Escape/backdrop closing, focus return and background isolation remain intact. The photographic home hero label no longer reserves a decorative-line offset, so its text aligns with the heading, description and actions.
+
+Targeted Chromium checks covered 24 combinations at 320, 390, 768, 820, 1024 and 1440px in light/dark and LTR/RTL, including both authentication pages. A separate 126-view scan covered all 21 pages at phone, tablet and desktop widths in both themes, checking page overflow and content bounds while allowing intentional swipe carousels. Phone and tablet captures were inspected.

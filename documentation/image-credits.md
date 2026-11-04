@@ -50,3 +50,5 @@ The Home 1 and Home 2 heroes are distinct photographs of the Italian Dolomites. 
 ## Living Atlas 2.0 additions
 
 - `hiking-journal.webp`: [Will Africano on Unsplash](https://unsplash.com/photos/person-wearing-backpack-Rj2Xuc6-cd0), original source `photo-1568401900627-cbe151ba3455`. Licensed under the Unsplash License above; downloaded locally at 1800px and encoded as WebP. Used as a general hiking photograph, with no unverified destination or activity booking claim.
+
+Google and Apple marks identify their respective sign-in controls on the authentication pages. They are provider identities, not Waylark branding.
