@@ -69,3 +69,9 @@ Targeted Chromium checks covered 24 combinations at 320, 390, 768, 820, 1024 and
 At 681–1240px, collections containing exactly three package or journal cards now stack one per row. The same layout applies to planning-information cards, Home 2 postcards, About philosophy notes and the international destination trio. The former centered third-package rule was removed, and tablet postcards no longer rotate or stagger. Dynamic collections, including three saved dashboard packages, use the same shared rule.
 
 Chromium checks passed on all 21 pages at 390, 680, 681, 768, 820, 1024, 1180, 1240, 1241 and 1440px in both themes (420 views). Additional light/dark and LTR/RTL checks covered six affected routes at four tablet widths, including a populated dashboard (96 views). Checks verified equal card widths, sequential rows, visibility and page overflow; the 820px package-section capture was visually inspected.
+
+## Distinct photography follow-up
+
+Catalog banners, international destination tiles, the home atlas feature views, conflicting home style-tab photos, the home workspace photo and the together-page story photos now use separate destination photographs. Atlas thumbnails retain their destination identities while the large feature view uses another photograph. This also prevents repetition when switching styles, destinations, planning stages or the family collection.
+
+Twenty replacement assets match their respective original images' pixel dimensions exactly, recorded in `photo-variants.json`. Existing CSS frames, masks and cropping behavior are retained. Chromium checks passed for 396 page/interactive states across all 21 pages at 390, 820 and 1440px in light/dark themes, with no repeated on-page photographs (compared by source identity), broken images, page overflow or script errors. All replacement assets were reviewed in a contact sheet; atlas and international tile layouts were captured at each viewport size.

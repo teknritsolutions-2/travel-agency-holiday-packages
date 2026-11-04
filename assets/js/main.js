@@ -219,10 +219,13 @@ const galleryDestinations = [
   "kerala",
   "japan",
   "goa",
-].map((id) => DESTINATIONS.find((d) => d.id === id));
+].map((id) => ({
+  ...DESTINATIONS.find((d) => d.id === id),
+  featureImage: `atlas-${id}.webp`,
+}));
 function gallery() {
   const d = galleryDestinations[0];
-  return `<section class="section atlas-section container" id="destinations"><div class="section-head"><div><span class="eyebrow">A world waiting to be explored</span><h2>The atlas is open.<br> Where to next?</h2></div><div class="gallery-controls"><span class="counter"><span id="gallery-count">01</span> / 06</span><button class="icon-btn" data-gallery-step="-1" aria-label="Previous destination">${icon("left", 20)}</button><button class="icon-btn" data-gallery-step="1" aria-label="Next destination">${icon("right", 20)}</button></div></div><div class="atlas-explorer"><div class="atlas-landscape destination-gallery"><div class="painted-landscape">${img(d.image, d.name, "atlas-active-image")}</div><span class="atlas-coordinate">A DIFFERENT POINT OF VIEW</span><div class="atlas-image-label"><span id="atlas-image-country">${d.country}</span><strong id="atlas-image-name">${d.name}</strong></div></div><div class="atlas-notebook"><div class="atlas-caption" aria-live="polite"><span class="eyebrow" id="atlas-country">${d.country} · ${PACKAGES.filter((p) => p.destination === d.name).length} suggested journeys</span><h3 id="atlas-title">A little wonder<br> called ${d.name}.</h3><p id="gallery-description">${d.description}. Follow your curiosity into a journey you can make your own.</p><a id="gallery-link" class="text-link" href="${url(d.category + "-packages", "?destination=" + d.name)}">Explore ${d.name} ${icon("arrow", 18)}</a></div><div class="atlas-selections" aria-label="Choose a destination">${galleryDestinations.map((x, i) => `<button class="atlas-pick ${i === 0 ? "selected" : ""}" data-destination="${i}" aria-pressed="${i === 0}" aria-label="Explore ${x.name}">${img(x.image, x.name)}<span>${x.name}</span><span class="pick-check">${icon("check", 15)}</span></button>`).join("")}</div></div></div></section>`;
+  return `<section class="section atlas-section container" id="destinations"><div class="section-head"><div><span class="eyebrow">A world waiting to be explored</span><h2>The atlas is open.<br> Where to next?</h2></div><div class="gallery-controls"><span class="counter"><span id="gallery-count">01</span> / 06</span><button class="icon-btn" data-gallery-step="-1" aria-label="Previous destination">${icon("left", 20)}</button><button class="icon-btn" data-gallery-step="1" aria-label="Next destination">${icon("right", 20)}</button></div></div><div class="atlas-explorer"><div class="atlas-landscape destination-gallery"><div class="painted-landscape">${img(d.featureImage, d.name, "atlas-active-image")}</div><span class="atlas-coordinate">A DIFFERENT POINT OF VIEW</span><div class="atlas-image-label"><span id="atlas-image-country">${d.country}</span><strong id="atlas-image-name">${d.name}</strong></div></div><div class="atlas-notebook"><div class="atlas-caption" aria-live="polite"><span class="eyebrow" id="atlas-country">${d.country} · ${PACKAGES.filter((p) => p.destination === d.name).length} suggested journeys</span><h3 id="atlas-title">A little wonder<br> called ${d.name}.</h3><p id="gallery-description">${d.description}. Follow your curiosity into a journey you can make your own.</p><a id="gallery-link" class="text-link" href="${url(d.category + "-packages", "?destination=" + d.name)}">Explore ${d.name} ${icon("arrow", 18)}</a></div><div class="atlas-selections" aria-label="Choose a destination">${galleryDestinations.map((x, i) => `<button class="atlas-pick ${i === 0 ? "selected" : ""}" data-destination="${i}" aria-pressed="${i === 0}" aria-label="Explore ${x.name}">${img(x.image, x.name)}<span>${x.name}</span><span class="pick-check">${icon("check", 15)}</span></button>`).join("")}</div></div></div></section>`;
 }
 const planningStages = [
   {
@@ -264,7 +267,7 @@ function route() {
   return `<section class="section unfolding-section"><div class="container"><div class="unfolding-heading"><span class="eyebrow">From someday to let’s go</span><h2>Your journey,<br> unfolding.</h2><p>A beautiful holiday doesn’t begin at the airport.<br> It begins with a possibility.</p></div><div class="unfolding-layout"><div class="planning-controls"><div class="planning-stages" role="tablist" aria-label="Journey planning stages">${planningStages.map((s, i) => `<button class="planning-stage" role="tab" id="planning-stage-${i}" aria-selected="${i === 0}" aria-controls="planning-visual" data-planning-stage="${i}"><span class="stage-number">0${i + 1}</span><span><strong>${s.name}</strong><span class="stage-description">${s.description}</span></span>${icon("arrow", 19)}</button>`).join("")}</div><div id="planning-action">${linkBtn(planningStages[0].action, planningStages[0].page, "secondary")}</div><span class="planning-footnote">Thoughtfully planned. Entirely your own.</span></div><div class="planning-visual" id="planning-visual" role="tabpanel" aria-labelledby="planning-stage-0"><div class="planning-photo">${img(planningStages[0].image, planningStages[0].alt, "planning-active-image")}</div><div class="planning-photo-note"><span class="eyebrow">A little perspective</span><h3 id="planning-title">${planningStages[0].title}</h3><p id="planning-caption">${planningStages[0].caption}</p></div></div></div></div></section>`;
 }
 function workspaceFeature() {
-  return `<section class="section muted-bg"><div class="container workspace-feature"><div class="workspace-feature-photo">${img(PAGE === "home2" ? "kerala-detail.webp" : "rajasthan-detail.webp", PAGE === "home2" ? "Kerala backwaters and palms" : "The architecture of Jaipur, Rajasthan")}</div><div><span class="eyebrow">Your journey, all together</span><h2>Less to keep track of.<br> More to look forward to.</h2><p>Keep your favourite places, itineraries and travel notes together. Pick up your plans whenever inspiration finds you.</p>${linkBtn("Open your travel journal", "dashboard")}</div></div></section>`;
+  return `<section class="section muted-bg"><div class="container workspace-feature"><div class="workspace-feature-photo">${img(PAGE === "home2" ? "kerala-detail.webp" : "workspace-jaipur.webp", PAGE === "home2" ? "Kerala backwaters and palms" : "The architecture of Jaipur, Rajasthan")}</div><div><span class="eyebrow">Your journey, all together</span><h2>Less to keep track of.<br> More to look forward to.</h2><p>Keep your favourite places, itineraries and travel notes together. Pick up your plans whenever inspiration finds you.</p>${linkBtn("Open your travel journal", "dashboard")}</div></div></section>`;
 }
 
 function closing() {
@@ -291,7 +294,15 @@ function styleContent(s) {
     s === "Adventure"
       ? PACKAGES.find((p) => p.id === "ladakh-1")
       : PACKAGES.find((p) => p.style === s);
-  return `<div class="style-stage">${img(p.image, p.destination)}<div class="style-copy"><span class="eyebrow">${s}</span><h3>${p.title}</h3><p>${p.description}</p><div class="package-meta"><span>${p.days} days of discovery</span><span>From ${money(p.price)}</span></div>${linkBtn("Find your " + s.toLowerCase(), "deals", "", "?style=" + encodeURIComponent(s))}</div></div>`;
+  const photo = {
+    Adventure: "ladakh-detail.webp",
+    "Beach Escapes": "style-beach.webp",
+    "Mountains & Nature": "style-nature.webp",
+    "Romantic Getaways": "style-romance.webp",
+    "Family Holidays": "style-family.webp",
+    "Cultural Journeys": "style-cultural.webp",
+  }[s];
+  return `<div class="style-stage">${img(photo, p.destination)}<div class="style-copy"><span class="eyebrow">${s}</span><h3>${p.title}</h3><p>${p.description}</p><div class="package-meta"><span>${p.days} days of discovery</span><span>From ${money(p.price)}</span></div>${linkBtn("Find your " + s.toLowerCase(), "deals", "", "?style=" + encodeURIComponent(s))}</div></div>`;
 }
 function homePage() {
   return `<section class="hero">${img("hero-dolomites.webp", "Mountain peaks reflected in Lago di Braies in the Italian Dolomites", "", false)}<div class="container"><span class="eyebrow">Extraordinary places. Unforgettable journeys.</span><h1>The world is closer<br> than <em>you think.</em></h1><p>Find a little wonder. Take the scenic route.<br> Discover holidays that become your favourite stories.</p><div class="actions">${linkBtn("Explore packages", "domestic-packages", "secondary")}<a class="btn light" href="${url("booking")}">Plan my holiday ${icon("arrow", 17)}</a></div></div><div class="hero-note">${icon("pin", 20)}<div><b>The Dolomites, Italy</b>46.6943° N · 12.0856° E</div><div class="compass">${icon("compass", 55)}</div></div><div class="container hero-bottom"><a href="#destinations">Discover ${icon("arrow", 15)}</a><span>A new perspective awaits</span></div></section>${searchPanel()}${gallery()}<section class="section muted-bg"><div class="container">${sectionHead("Handpicked, not ordinary", "Good places.<br> Great memories.", "View all packages", "deals")}<div class="package-grid home-packages painted-cards">${["kerala-1", "bali-1", "kashmir-1"].map((id) => card(PACKAGES.find((p) => p.id === id))).join("")}</div><div class="section-foot"><p>Prices from, per person. Final costs depend on your dates and preferences.</p><a class="text-link" href="${url("booking")}">Make a trip your own ${icon("arrow", 17)}</a></div></div></section><section class="editorial"><div class="container editorial-grid"><div class="brush-photo">${img("ladakh.webp", "The high-altitude mountain landscapes of Ladakh")}</div><div><span class="eyebrow">Off the familiar path</span><h2>Some places<br> change your<br> perspective.</h2><p>Wide-open skies. Ancient monasteries. Roads that invite you to slow down. In Ladakh, the extraordinary lives in the quiet moments.</p><div class="mini-meta"><span>Ladakh, India</span><span>7-day suggested journey</span></div>${linkBtn("Discover Ladakh", "package-details", "secondary", "?id=ladakh-1")}</div></div></section>${styleSection()}<section class="section muted-bg"><div class="container">${sectionHead("A little seasonal inspiration", "Your out-of-office<br> is calling.", "Featured getaways", "deals")}<div class="getaway-grid"><a class="getaway" href="${url("package-details", "?id=maldives-1")}">${img("maldives.webp", "Maldives turquoise lagoon")}<span class="tag">The island edit</span><div><h3>A slower shade of blue.</h3><p>Maldives · 5 days · Indicative from ${money(78000)}</p><span class="text-link">Find your island time ${icon("arrow", 17)}</span></div></a><a class="getaway" href="${url("package-details", "?id=japan-1")}">${img("japan-detail.webp", "Traditional Japanese streets")}<span class="tag">The culture edit</span><div><h3>Wonder around every corner.</h3><p>Japan · 8 days · Indicative from ${money(112000)}</p><span class="text-link">Discover a different rhythm ${icon("arrow", 17)}</span></div></a></div></div></section>${route()}${workspaceFeature()}${closing()}`;
@@ -423,16 +434,16 @@ function catalogPage(type) {
         : "Closer to home.<br> Far from ordinary.";
   let hero =
     type === "deals"
-      ? "maldives-detail.webp"
+      ? "banner-getaways.webp"
       : intl
-        ? "italy.webp"
-        : "kerala-detail.webp";
+        ? "banner-international.webp"
+        : "banner-domestic.webp";
   return `${banner(type === "deals" ? "The curated collection" : intl ? "International holidays" : "Discover India", title, type === "deals" ? "A considered collection of journeys worth making. Inspiring routes, transparent starting estimates." : intl ? "A new country. A different perspective. A journey that stays with you." : "From mountain mornings to the quiet rhythm of the backwaters.", hero)}<div class="container breadcrumb"><a href="${home()}">Home</a> / ${intl ? "International" : type === "deals" ? "Featured Getaways" : "Domestic"} Packages</div>${
     intl
       ? `<div class="container international-mosaic painted-collection" style="margin-top:10px">${[
-          ["switzerland", "switzerland-detail.webp", "The Alpine edit"],
-          ["bali", "bali-detail.webp", "The island edit"],
-          ["japan", "japan-detail.webp", "The culture edit"],
+          ["switzerland", "collection-switzerland.webp", "The Alpine edit"],
+          ["bali", "collection-bali.webp", "The island edit"],
+          ["japan", "collection-japan.webp", "The culture edit"],
         ]
           .map(([id, file, label]) => {
             const d = DESTINATIONS.find((d) => d.id === id);
@@ -497,7 +508,7 @@ function updateCatalog() {
     : `Preferred season: ${period}. Check dates and availability when finalising your plans.`;
 }
 function togetherPage() {
-  return `${banner("Make memories, together", "The best journeys<br> are shared.", "For a beautiful beginning, a family tradition, or simply more time with your favourite people.", "bali-detail.webp")}<section class="section container"><div class="story-pair together-stories"><article>${img("maldives.webp", "Maldives island lagoon")}<span class="eyebrow">For just the two of you</span><h2>Fall in love<br> with somewhere new.</h2><p>A private moment. An unhurried morning. Romantic escapes designed to leave space for each other.</p><button class="text-link audience-link" data-audience="Honeymoon" style="background:none;border:0;padding:0">Explore honeymoon journeys ${icon("arrow", 17)}</button></article><article>${img("goa.webp", "The coastline of Goa")}<span class="eyebrow">For the whole family</span><h2>Little adventures.<br> Lifelong memories.</h2><p>Flexible routes, easy days, shared discoveries. Find a holiday with something for everyone.</p><button class="text-link audience-link" data-audience="Family" style="background:none;border:0;padding:0">Find a family escape ${icon("arrow", 17)}</button></article></div></section><section class="section muted-bg" id="together-packages"><div class="container">${sectionHead("Find your shared adventure", "Made for your kind of together.")}<div class="style-tabs" role="tablist" aria-label="Travelers"><button role="tab" class="pill" data-audience="Honeymoon" aria-selected="true">Honeymoon & Romance</button><button role="tab" class="pill" data-audience="Family" aria-selected="false">Family Holidays</button></div><div id="together-grid" class="package-grid"></div></div></section>${faqSection()}${closing()}`;
+  return `${banner("Make memories, together", "The best journeys<br> are shared.", "For a beautiful beginning, a family tradition, or simply more time with your favourite people.", "bali-detail.webp")}<section class="section container"><div class="story-pair together-stories"><article>${img("together-maldives.webp", "A Maldivian coral reef and lagoon")}<span class="eyebrow">For just the two of you</span><h2>Fall in love<br> with somewhere new.</h2><p>A private moment. An unhurried morning. Romantic escapes designed to leave space for each other.</p><button class="text-link audience-link" data-audience="Honeymoon" style="background:none;border:0;padding:0">Explore honeymoon journeys ${icon("arrow", 17)}</button></article><article>${img("together-goa.webp", "The beach at Cidade de Goa")}<span class="eyebrow">For the whole family</span><h2>Little adventures.<br> Lifelong memories.</h2><p>Flexible routes, easy days, shared discoveries. Find a holiday with something for everyone.</p><button class="text-link audience-link" data-audience="Family" style="background:none;border:0;padding:0">Find a family escape ${icon("arrow", 17)}</button></article></div></section><section class="section muted-bg" id="together-packages"><div class="container">${sectionHead("Find your shared adventure", "Made for your kind of together.")}<div class="style-tabs" role="tablist" aria-label="Travelers"><button role="tab" class="pill" data-audience="Honeymoon" aria-selected="true">Honeymoon & Romance</button><button role="tab" class="pill" data-audience="Family" aria-selected="false">Family Holidays</button></div><div id="together-grid" class="package-grid"></div></div></section>${faqSection()}${closing()}`;
 }
 function selectAudience(a) {
   $$("[role=tab][data-audience]").forEach((el) =>
@@ -1049,7 +1060,7 @@ function setGallery(i) {
   });
   const d = galleryDestinations[galleryIndex],
     photo = $(".atlas-active-image");
-  photo.src = A + "images/" + d.image;
+  photo.src = A + "images/" + d.featureImage;
   photo.alt = d.name;
   $("#atlas-title").innerHTML =
     "A little wonder<br> called " + esc(d.name) + ".";

@@ -52,3 +52,32 @@ The Home 1 and Home 2 heroes are distinct photographs of the Italian Dolomites. 
 - `hiking-journal.webp`: [Will Africano on Unsplash](https://unsplash.com/photos/person-wearing-backpack-Rj2Xuc6-cd0), original source `photo-1568401900627-cbe151ba3455`. Licensed under the Unsplash License above; downloaded locally at 1800px and encoded as WebP. Used as a general hiking photograph, with no unverified destination or activity booking claim.
 
 Google and Apple marks identify their respective sign-in controls on the authentication pages. They are provider identities, not Waylark branding.
+
+## Distinct section photography — 4 November 2026
+
+Repeated on-page photography was replaced with separate destination views. Each replacement retains the exact pixel dimensions of its original asset; CSS frames, masks and object-fit behavior are unchanged. The atlas feature view uses a different photograph from its destination selector thumbnail. Package identity photographs remain consistent when a package appears on different pages.
+
+[photo-variants.json](photo-variants.json) records the original asset, dimensions, source page and source image for each replacement. All additions use the Unsplash License, reviewed 4 November 2026. `style-cultural.webp` is a dimension-matched crop of the already-credited `rajasthan.webp`.
+
+| File | Subject | Source | Dimensions |
+| --- | --- | --- | --- |
+| `atlas-bali.webp` | Rice terraces in Tegallalang, Bali | [Source photograph](https://unsplash.com/photos/rf5R1qXwlDU) | 1000 × 1327 |
+| `atlas-goa.webp` | An island off Baga Beach, Goa | [Source photograph](https://unsplash.com/photos/IgmLvxJ4YRA) | 1000 × 750 |
+| `atlas-japan.webp` | A quiet Kyoto street | [Source photograph](https://unsplash.com/photos/I2e5b8ppox4) | 1000 × 667 |
+| `atlas-kashmir.webp` | Kashmir mountains | [Source photograph](https://unsplash.com/photos/Itp6JMYTGIE) | 1000 × 667 |
+| `atlas-kerala.webp` | A houseboat in Kerala | [Source photograph](https://unsplash.com/photos/rSBK55JCFZc) | 1000 × 563 |
+| `atlas-switzerland.webp` | Swiss Alpine peaks at sunrise | [Source photograph](https://unsplash.com/photos/w-BSFRpfTWk) | 1400 × 1050 |
+| `banner-domestic.webp` | A houseboat on the Alleppey backwaters, Kerala | [Source photograph](https://unsplash.com/photos/qS3rD_eYfJY) | 1000 × 668 |
+| `banner-getaways.webp` | The beach and lagoon of Dhigurah, Maldives | [Source photograph](https://unsplash.com/photos/Kmf8MZkk9GQ) | 1000 × 750 |
+| `banner-international.webp` | Vernazza on the Italian Riviera | [Source photograph](https://unsplash.com/photos/LZT90C8ju0s) | 1000 × 1505 |
+| `collection-bali.webp` | A temple walkway in Bali | [Source photograph](https://unsplash.com/photos/HH59QHK7_Gk) | 1000 × 667 |
+| `collection-japan.webp` | Fushimi Inari Taisha in Kyoto | [Source photograph](https://unsplash.com/photos/eRNWnwY63Cg) | 1000 × 667 |
+| `collection-switzerland.webp` | Bachalpsee near Grindelwald, Switzerland | [Source photograph](https://unsplash.com/photos/YaUv7f4d0-U) | 1600 × 1447 |
+| `style-beach.webp` | Sunset on Baga Beach, Goa | [Source photograph](https://unsplash.com/photos/dHlzA7PAng8) | 1200 × 1800 |
+| `style-family.webp` | The meadows and mountains of Sonamarg, Kashmir | [Source photograph](https://unsplash.com/photos/41SbvQLYkCU) | 1000 × 667 |
+| `style-nature.webp` | Tea plantations in Munnar, Kerala | [Source photograph](https://unsplash.com/photos/PHOk0ZP28a0) | 1000 × 668 |
+| `style-romance.webp` | A coastal temple at sunset in Bali | [Source photograph](https://unsplash.com/photos/OQRkj2erTPI) | 1000 × 667 |
+| `together-goa.webp` | The beach at Cidade de Goa | [Source photograph](https://unsplash.com/photos/K_uEYaLheEA) | 1000 × 750 |
+| `together-maldives.webp` | A Maldivian coral reef and lagoon | [Source photograph](https://unsplash.com/photos/vuFzbaTpR7s) | 1000 × 1250 |
+| `workspace-jaipur.webp` | A palace courtyard in Jaipur, Rajasthan | [Source photograph](https://unsplash.com/photos/lpEj4MlVe_k) | 1200 × 2134 |
+| `style-cultural.webp` | Hawa Mahal in Jaipur, Rajasthan | [Source photograph](https://images.unsplash.com/photo-1772533254933-ee692487aba2) | 1200 × 2134 |
