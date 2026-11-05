@@ -54,4 +54,4 @@ Before operating a commercial service, supply the real agency identity/contact i
 
 ## Hosting
 
-Serve the source folder directly for GitHub Pages. Sites-specific deployment identity is retained in `.openai/hosting.json`; its temporary `dist` package is prepared outside the client deliverable during publication. No framework, node_modules, screenshots or test fixtures are required in the website source.
+Serve the source folder directly for GitHub Pages. No framework, node_modules, screenshots or test fixtures are required in the website source.
