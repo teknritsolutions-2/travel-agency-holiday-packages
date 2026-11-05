@@ -8,7 +8,7 @@ The frontend release was checked across all 21 page entries, all 20 package vari
 - Slightly darkened light-theme muted text so supporting text on pale panels clears the 4.5:1 contrast target.
 - Allowed maximum-length destination text to wrap in trip cards and retained wrapping in enquiry dialogs.
 - Gave the dashboard welcome feature a photograph distinct from package images, preventing a repeat when the latest trip is Kashmir.
-- Restored the original `pages/404.html` entry. The root `404.html` remains the GitHub Pages fallback so unknown and nested URLs render the branded error page in place, with correct asset/navigation paths and `noindex`.
+- Kept the original `pages/404.html` entry and removed the root `404.html` as requested. Unknown URLs now use GitHub Pages' default error response.
 - Fixed dark-mode itinerary printing: printed pages use a light palette, controls stay hidden, and all planning notes print as text rather than being clipped inside a textarea. Screen form behavior is preserved.
 
 ## Verification
@@ -26,7 +26,7 @@ The frontend release was checked across all 21 page entries, all 20 package vari
 | Dropdown workflows | Eight browser/viewport/direction runs passed |
 | Maximum-length enquiry content | 16 browser/viewport/direction runs passed |
 | Itinerary printing | Four browser/theme runs passed, including complete long notes and screen restoration |
-| Root 404 fallback | 16 direct/nested URL renders passed across mobile/desktop, both themes and both browser engines; asset paths, navigation and skip links verified |
+| Historical root 404 fallback check | 16 renders passed before the root fallback was removed; the current branded entry is `pages/404.html` only |
 
 Chromium/Brave coverage included 320, 390, 680, 681, 820, 1024, 1240, 1241, 1440 and 1920px. WebKit coverage included phone, tablet and desktop sizes. The RTL matrix included narrow phones and the tablet breakpoint. These are browser-engine checks, not a claim of physical-device testing.
 
